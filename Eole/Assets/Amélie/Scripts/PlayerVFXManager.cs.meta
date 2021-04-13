@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 3a207e3213915a844a7ab8947aa94ba9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - playerVFX: {instanceID: 0}
+  - mainCamera: {instanceID: 0}
+  - cameraVFXGraph: {instanceID: 0}
+  - collectible3D_Volume: {instanceID: 0}
+  - collectibleFlashback_Volume: {instanceID: 0}
+  - ghostMaterial: {fileID: 2100000, guid: 2a3c913231f788e40ab6e6a7cfb5b8e9, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
