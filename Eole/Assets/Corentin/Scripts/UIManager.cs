@@ -8,10 +8,12 @@ public class UIManager : MonoBehaviour
 	[Header("References")]
 	public GameObject InGameUI;
 	public GameObject PauseUI;
-	public CameraManager cameraManagerRef;
-	public Mover moverRef;
-	public Abilities abilitiesRef;
-	public Collector collectorRef;
+	public GameObject player;
+	Mover moverRef;
+	Abilities abilitiesRef;
+	public GameObject camera;
+	CameraManager cameraManagerRef;
+	Collector collectorRef;
 
 	[Header("Values")]
 	float initialCameraRot;
@@ -23,10 +25,12 @@ public class UIManager : MonoBehaviour
 	{
 		InGameUI = GameObject.Find("InGameUI");
 		PauseUI = GameObject.Find("PauseUI");
-		cameraManagerRef = GameObject.Find("Camera").GetComponent<CameraManager>();
-		moverRef = GameObject.Find("Player").GetComponent<Mover>();
-		abilitiesRef = GameObject.Find("Player").GetComponent<Abilities>();
-		collectorRef = GameObject.Find("Camera").GetComponent<Collector>();
+		player = GameObject.Find("Player");
+		moverRef = player.GetComponent<Mover>();
+		abilitiesRef = player.GetComponent<Abilities>();
+		camera = GameObject.Find("Camera");
+		cameraManagerRef = camera.GetComponent<CameraManager>();
+		collectorRef = camera.GetComponent<Collector>();
 
 		InGameUI.SetActive(true);
 		PauseUI.SetActive(false);
@@ -102,7 +106,18 @@ public class UIManager : MonoBehaviour
 
 	public void Save()
 	{
+		SaveSystem.Save(player);
+	}
 
+	public void LoadSave()
+	{
+		LevelData data = SaveSystem.LoadSave();
+
+		Vector3 position;
+		position.x = data.playerPos[0];
+		position.y = data.playerPos[1];
+		position.z = data.playerPos[2];
+		player.transform.position = position;
 	}
 
 	public void Quit()

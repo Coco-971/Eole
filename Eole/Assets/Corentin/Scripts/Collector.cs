@@ -23,7 +23,8 @@ public class Collector : MonoBehaviour
 
 	[Header("Values")]
 	public float distanceToCollect;
-	public float initialCameraRot;
+	float initialCameraRot;
+	public float collectingMoveSpeedMultiplier;
 
 	[Header("Pick Up Curve")]
 	public AnimationCurve lerpCurve;
@@ -40,6 +41,8 @@ public class Collector : MonoBehaviour
 
 		collecting = false;
 		readyToSwitch = true;
+
+		collectingMoveSpeedMultiplier = 1;
 	}
 
 	public GameObject FindClosestCollectible()

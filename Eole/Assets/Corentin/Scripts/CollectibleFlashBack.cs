@@ -55,6 +55,7 @@ public class CollectibleFlashBack : MonoBehaviour
 	{
 		collectibleActivated = true;
 		alreadyActivated = true;
+		collectorRef.collectingMoveSpeedMultiplier = 0.5f;
 
 		transform.GetChild(0).gameObject.SetActive(true);
 
@@ -77,6 +78,7 @@ public class CollectibleFlashBack : MonoBehaviour
 		{
 			collectorRef.playerVFXManager.CollectibleVolume_OFF();
 			collectorRef.collecting = false;
+
 			DisableCollectible();
 		}
 	}
@@ -85,6 +87,7 @@ public class CollectibleFlashBack : MonoBehaviour
 	{
 		StartCoroutine(Disappear());
 		collectibleActivated = false;
+		collectorRef.collectingMoveSpeedMultiplier = 1;
 	}
 
 	IEnumerator Disappear()

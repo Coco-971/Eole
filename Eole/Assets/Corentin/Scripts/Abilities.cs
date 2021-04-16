@@ -10,7 +10,6 @@ public class Abilities : MonoBehaviour
 	public Transform cameraRot;
 	public Mover moverRef;
 	public Animator fader;
-	public LayerMask whatIsGround;
 	public UIManager UIManager;
 
     public PlayerVFXManager playerVFXManager;
@@ -110,8 +109,6 @@ public class Abilities : MonoBehaviour
 
 			if (breezing)
 			{
-				moverRef.maxSpeed = 10;
-
 				if (breezeEnergyInSeconds > 0)
 				{
 					breezeEnergyInSeconds -= Time.deltaTime;
@@ -185,6 +182,7 @@ public class Abilities : MonoBehaviour
 
 	void BreezeStart()
 	{
+		moverRef.maxSpeed = 10;
 		moverRef.canMove = false;
 		breezing = true;
 		rb.useGravity = false;
@@ -194,6 +192,7 @@ public class Abilities : MonoBehaviour
 
 	public void BreezeEnd()
 	{
+		moverRef.maxSpeed = 5;
 		moverRef.canMove = true;
 		breezing = false;
 		rb.useGravity = true;

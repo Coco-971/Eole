@@ -8,6 +8,7 @@ public class Mover : MonoBehaviour
 	public Rigidbody rb;
 	public CapsuleCollider body;
 	public Abilities abilitiesRef;
+	public Collector collectorRef;
 	public LayerMask whatIsGround;
 	public Animator animator;
 	public PlayerVFXManager playerVFXManager;
@@ -24,7 +25,7 @@ public class Mover : MonoBehaviour
 	private bool touchedGround;
 
 	[Header("Values")]
-	float currentMoveSpeed;
+	public float currentMoveSpeed;
 	public float baseMoveSpeed;
 	public float inAirMoveSpeed;
 	public float maxSpeed;
@@ -43,11 +44,13 @@ public class Mover : MonoBehaviour
 		rb = GetComponent<Rigidbody>();
 		body = GetComponent<CapsuleCollider>();
 		abilitiesRef = GetComponent<Abilities>();
+		collectorRef = GetComponentInChildren<Collector>();
 		animator = GetComponentInChildren<Animator>();
 		playerVFXManager = GetComponent<PlayerVFXManager>();
 		UIManager = GameObject.Find("UI").GetComponent<UIManager>();
 
 		canMove = true;
+		maxSpeed = 5;
 
 		currentMoveSpeed = baseMoveSpeed;
 	}
@@ -61,7 +64,6 @@ public class Mover : MonoBehaviour
 
 		if (grounded && canMove)
 		{
-			maxSpeed = 5;
 			if(touchedGround)
 			{
 				playerVFXManager.TouchGroundVFX_Play();
@@ -93,7 +95,7 @@ public class Mover : MonoBehaviour
 			if (canMove)
 			{
 				currentMoveSpeed = baseMoveSpeed;
-				Vector3 moveDirection = (transform.right * inputDirection.x + transform.forward * inputDirection.z) * currentMoveSpeed * Time.deltaTime * 10;
+				Vector3 moveDirection = (transform.right * inputDirection.x + transform.forward * inputDirection.z) * (currentMoveSpeed * collectorRef.collectingMoveSpeedMultiplier) * Time.deltaTime * 10;
 				moveDirection.y = rb.velocity.y;
 				rb.velocity = moveDirection;
 
@@ -120,7 +122,7 @@ public class Mover : MonoBehaviour
 			if (canMove)
 			{
 				currentMoveSpeed = inAirMoveSpeed;
-				rb.AddForce((transform.right * inputDirection.x + transform.forward * inputDirection.z) * currentMoveSpeed * Time.deltaTime * 10, ForceMode.Acceleration);
+				rb.AddForce((transform.right * inputDirection.x + transform.forward * inputDirection.z) * (currentMoveSpeed * collectorRef.collectingMoveSpeedMultiplier) * Time.deltaTime * 10, ForceMode.Acceleration);
 				Vector3 velocityC = rb.velocity;
 				velocityC.y = 0;
 				velocityC = Vector3.ClampMagnitude(velocityC, maxSpeed);
