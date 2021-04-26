@@ -42,6 +42,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: plusOne
+    uniqueID: 2653699289
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: minusOne
+    uniqueID: 1827711165
     locked: 0
