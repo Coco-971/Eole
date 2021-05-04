@@ -12,8 +12,11 @@ public class Collector : MonoBehaviour
 	public Mover moverRef;
 	public Abilities abilitiesRef;
 	public CameraManager cameraManagerRef;
-	public PlayerVFXManager playerVFXManager;
 	public LayerMask whatIsObstacles;
+
+	//SFX VFX
+	public PlayerVFXManager playerVFXManager;
+	public PlayerSFXManager playerSFXManager;
 
 	[Header("Booleans")]
 	bool visible;
@@ -26,6 +29,8 @@ public class Collector : MonoBehaviour
 	float initialCameraRot;
 	public float collectingMoveSpeedMultiplier;
 
+	public string closestCollectibleText;
+
 	[Header("Pick Up Curve")]
 	public AnimationCurve lerpCurve;
 	public float duration;
@@ -37,7 +42,10 @@ public class Collector : MonoBehaviour
 		moverRef = GetComponentInParent<Mover>();
 		abilitiesRef = GetComponentInParent<Abilities>();
 		cameraManagerRef = GetComponent<CameraManager>();
+
+		//SFX VFX
 		playerVFXManager = GameObject.Find("Player").GetComponent<PlayerVFXManager>();
+		playerSFXManager = GameObject.Find("Player").GetComponent<PlayerSFXManager>();
 
 		collecting = false;
 		readyToSwitch = true;
@@ -81,8 +89,9 @@ public class Collector : MonoBehaviour
 		{
 			collecting = false;
 
-			//VFX
+			//SFX VFX
 			playerVFXManager.CollectibleVolume_OFF();
+			playerSFXManager.PickCollectible();
 
 			if (collectible3D)
 			{
@@ -108,6 +117,10 @@ public class Collector : MonoBehaviour
 			collecting = true;
 			abilitiesRef.GlideEnd();
 			abilitiesRef.BreezeEnd();
+
+			//SFX
+			playerSFXManager.PickCollectible();
+
 			if (collectible3D)
 			{
 				initialCameraRot = cameraManagerRef.xRotation;
@@ -120,6 +133,7 @@ public class Collector : MonoBehaviour
 				Cursor.lockState = CursorLockMode.None;
 				Cursor.visible = true;
 				collectible3D.InspectObject();
+				closestCollectibleText = collectible3D.text;
 
 				//VFX
 				playerVFXManager.CollectibleVolume_ON(0);
@@ -128,6 +142,7 @@ public class Collector : MonoBehaviour
 			{
 				StartCoroutine(CollectorCooldown(playerVFXManager.ghostFadeDuration));
 				closestCollectible.GetComponent<CollectibleFlashBack>().PlayFlashBack();
+				closestCollectibleText = collectibleFlashBack.text;
 
 				//VFX
 				playerVFXManager.CollectibleVolume_ON(1);

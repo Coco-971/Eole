@@ -7,6 +7,9 @@ public class FallManager : MonoBehaviour
 	[Header("References")]
 	public Mover moverRef;
 	public Animator fader;
+	
+	//SFX
+	public PlayerSFXManager playerSFXManager;
 
 	[Header("Booleans")]
 	public bool grounded;
@@ -25,6 +28,9 @@ public class FallManager : MonoBehaviour
 		moverRef = GetComponent<Mover>();
 		cycler = 0;
 		lastPos = new Vector3[secondsSaved + 1];
+
+		//SFX
+		playerSFXManager = GetComponent<PlayerSFXManager>();
 	}
 
 	void Update()
@@ -50,8 +56,15 @@ public class FallManager : MonoBehaviour
 
 	IEnumerator Respawn(Vector3 target)
 	{
+		//SFX
+		playerSFXManager.DyingSFX();
+
 		yield return new WaitForSeconds(respawnDelay);
 		transform.position = target;
+
+		//SFX
+		playerSFXManager.RespawnSFX();
+
 		yield return new WaitForSeconds(0.1f);
 		fader.SetBool("InstantFade", false);
 	}

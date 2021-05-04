@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Blinds
+  m_Shader: {fileID: -6465566751694194690, guid: 00a282977c6c2e7489619e9b7add94d1, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_1F0461DB:
+        m_Texture: {fileID: 2800000, guid: 192b81793b599e44294871dbdf7832bb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_A76E41FA:
+        m_Texture: {fileID: 2800000, guid: b0b5743950b968244a2e21c302378d7f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_C43A26CF:
+        m_Texture: {fileID: 2800000, guid: fc5ffbaf482e52f44877f1a720fa591c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_C73FC30F:
+        m_Texture: {fileID: 2800000, guid: 0099baa2bcff8f24b915a918d0e0c14d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_74AC6888_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 5b6c1b285f21f71429ed038f686b6c7b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_9769945B_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_23C1F2A6: 0.131
+    - Vector1_6EEE2C4E: 0.902
+    - Vector1_82AAF3C8: 0.008
+    m_Colors:
+    - Color_38FEBA9D: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 0.89411765}
+    - Vector2_E674FF57: {r: 0.88, g: 0.95, b: 0, a: 0}
+  m_BuildTextureStacks: []

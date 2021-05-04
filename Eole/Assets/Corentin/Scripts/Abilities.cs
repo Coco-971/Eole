@@ -12,13 +12,16 @@ public class Abilities : MonoBehaviour
 	public Animator fader;
 	public UIManager UIManager;
 
+	//SFX VFX
     public PlayerVFXManager playerVFXManager;
-    //public PlayerSFX_MGR playerSFX_MGR;
+    public PlayerSFXManager playerSFXmanager;
 
 	[Header("Booleans")]
 	public bool canAbility;
 	public bool grounded;
+	public bool wasAirborn;
 	public bool gliding;
+	public bool falling;
 	public bool breezing;
 	public bool breezed;
 	public bool inAirColumn;
@@ -61,12 +64,15 @@ public class Abilities : MonoBehaviour
 		moverRef = GetComponent<Mover>();
 		fader = GameObject.Find("Fader").GetComponent<Animator>();
 		playerVFXManager = GetComponent<PlayerVFXManager>();
+		playerSFXmanager = GetComponent<PlayerSFXManager>();
 		UIManager = GameObject.Find("UI").GetComponent<UIManager>();
 
 		inAirColumn = false;
 		canAbility = true;
 		breezing = false;
 		canTakeHole = true;
+		wasAirborn = false;
+		falling = false;
 
 		breezeForceModifier = breezeForce;
 		breezeEnergyInSeconds = breezeDuration;
@@ -138,6 +144,31 @@ public class Abilities : MonoBehaviour
 			if (grounded)
 			{
 				breezed = false;
+
+				//SFX
+				if (wasAirborn)
+				{
+					playerSFXmanager.TouchGround();
+					wasAirborn = false;
+				}
+			}
+			else
+			{
+				wasAirborn = true;
+
+				if (rb.velocity.y < 0)
+				{
+					if (falling)
+					{
+						playerSFXmanager.Falling_ON();
+						falling = false;
+					}
+				}
+				else
+				{
+					playerSFXmanager.Falling_OFF();
+					falling = true;
+				}
 			}
 		}
 	}
@@ -192,7 +223,7 @@ public class Abilities : MonoBehaviour
 
 	public void BreezeEnd()
 	{
-		moverRef.maxSpeed = 5;
+		moverRef.maxSpeed = 3;
 		moverRef.canMove = true;
 		breezing = false;
 		rb.useGravity = true;
@@ -200,7 +231,6 @@ public class Abilities : MonoBehaviour
 		playerVFXManager.BreezeVFXIntensity_Off();
 	}
 
-	//Turbulance Physical Object
 	void OnTriggerStay(Collider other)
 	{
 		if (other.GetComponent<Rigidbody>() == true && breezing)
@@ -240,6 +270,14 @@ public class Abilities : MonoBehaviour
 			breezeDurationModifier += breezeTurbineSecondAdder;
 			breezeEnergyInSeconds = breezeDurationModifier;
 			StartCoroutine(Turbining());
+
+			//SFX
+			playerSFXmanager.TakeBooster();
+		}
+
+		if (other.tag == "Hole" && canTakeHole && breezing)
+		{
+			playerSFXmanager.TakePassage();
 		}
 	}
 
@@ -269,8 +307,6 @@ public class Abilities : MonoBehaviour
 		}
 		inTurbine = false;
 		breezeDurationModifier = breezeDuration;
-
-
 	}
 
 	IEnumerator Teleport(Transform target)

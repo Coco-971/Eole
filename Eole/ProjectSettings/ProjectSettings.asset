@@ -612,7 +612,8 @@ PlayerSettings:
   suppressCommonWarnings: 1
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
-  additionalIl2CppArgs: 
+  additionalIl2CppArgs: --additional-cpp="D:/Dev/Projet_EoleV2/Eole/Assets/../Temp/fmod_register_static_plugins.cpp"
+    --additional-cpp="D:/Dev/Projet_EoleV2/Eole/Assets/Plugins/FMOD/src/Runtime/fmod_static_plugin_support.h"
   scriptingRuntimeVersion: 1
   gcIncremental: 0
   gcWBarrierValidation: 0

@@ -89,7 +89,10 @@ VFXRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials: []
+  m_Materials:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,6 +113,60 @@ VFXRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &1842909638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1842909639}
+  - component: {fileID: 1842909640}
+  m_Layer: 0
+  m_Name: PlayerSFXEmitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1842909639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842909638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7559725940347340865}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1842909640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842909638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/AmbientAirTone
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &7559725940347340864
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,6 +182,7 @@ GameObject:
   - component: {fileID: 7559725940347340878}
   - component: {fileID: 7559725940347340874}
   - component: {fileID: 7559725940347340875}
+  - component: {fileID: 196538263}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -144,6 +202,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 44693800}
+  - {fileID: 1842909639}
   m_Father: {fileID: 7559725942328076003}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -256,7 +315,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   volumeAnchorOverride: {fileID: 0}
-  antialiasing: 0
+  antialiasing: 1
   SMAAQuality: 2
   dithering: 0
   stopNaNs: 0
@@ -339,15 +398,17 @@ MonoBehaviour:
   moverRef: {fileID: 0}
   abilitiesRef: {fileID: 0}
   cameraManagerRef: {fileID: 0}
-  playerVFXManager: {fileID: 0}
   whatIsObstacles:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1
+  playerVFXManager: {fileID: 0}
+  playerSFXManager: {fileID: 0}
   collectable: 0
   collecting: 0
   readyToSwitch: 0
   distanceToCollect: 3
-  initialCameraRot: 0
+  collectingMoveSpeedMultiplier: 0
+  closestCollectibleText: 
   lerpCurve:
     serializedVersion: 2
     m_Curve:
@@ -392,6 +453,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &196538263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7559725940347340864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!1 &7559725940465574424
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +526,7 @@ GameObject:
   - component: {fileID: 7559725942328076014}
   - component: {fileID: 7559725942328076015}
   - component: {fileID: 823427552}
+  - component: {fileID: 621869526}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -482,7 +558,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7559725942328076005}
-  m_Material: {fileID: 13400000, guid: 8f3f6f472bc5ab44887ae5c479bd22c9, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -520,18 +596,20 @@ MonoBehaviour:
   rb: {fileID: 0}
   body: {fileID: 0}
   abilitiesRef: {fileID: 0}
+  collectorRef: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1024
   animator: {fileID: 0}
   playerVFXManager: {fileID: 0}
   UIManager: {fileID: 0}
   canMove: 0
   grounded: 0
   breezing: 0
-  baseMoveSpeed: 25
+  currentMoveSpeed: 0
+  baseMoveSpeed: 15
   inAirMoveSpeed: 40
-  maxSpeed: 5
+  maxSpeed: 3
 --- !u!114 &7559725942328076014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,23 +624,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   body: {fileID: 0}
-  cameraRot: {fileID: 7559725940347340865}
+  cameraRot: {fileID: 0}
   moverRef: {fileID: 0}
   fader: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 256
   UIManager: {fileID: 0}
   playerVFXManager: {fileID: 0}
+  playerSFXmanager: {fileID: 0}
   canAbility: 0
   grounded: 0
+  wasAirborn: 0
   gliding: 0
+  falling: 0
   breezing: 0
   breezed: 0
   inAirColumn: 0
   inTurbine: 0
   canTakeHole: 0
-  jumpForce: 50
+  jumpForce: 40
   glideSmoother: 90
   glideDescentRate: 1
   breezeForce: 20
@@ -590,6 +668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moverRef: {fileID: 0}
   fader: {fileID: 0}
+  playerSFXManager: {fileID: 0}
   grounded: 0
   secondsSaved: 3
   minAltitudeToTriggerRespawn: 30
@@ -607,6 +686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerVFX: {fileID: 0}
+  playerSFXManager: {fileID: 0}
   mainCamera: {fileID: 0}
   cameraVFXGraph: {fileID: 0}
   glideVFX_alphaCurve:
@@ -688,7 +768,7 @@ MonoBehaviour:
   trailParticlesVFX_rateMinMax: {x: 0, y: 3}
   collectible3D_Volume: {fileID: 0}
   collectibleFlashback_Volume: {fileID: 0}
-  ghostMaterial: {fileID: 2100000, guid: 2a3c913231f788e40ab6e6a7cfb5b8e9, type: 2}
+  ghostMaterial: {fileID: 2100000, guid: 1f740afcc38ae2e47bdd22a4f43308a8, type: 2}
   ghostFadeCurve:
     serializedVersion: 2
     m_Curve:
@@ -714,6 +794,32 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   ghostFadeDuration: 2
+--- !u!114 &621869526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7559725942328076005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8102d840f7867749a3e9622526a12d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dyingEvent: 
+  respawnEvent: 
+  footstepEvent: 
+  touchGroundEvent: 
+  glideEvent: 
+  fallingEvent: 
+  breezeEvent: 
+  breezeActivationEvent: 
+  breezeParameter: 
+  takePassage: 
+  takeBooster: 
+  pickCollectibleEvent: 
+  activateCollectibleEvent: 
+  ghostEvent: 
 --- !u!1001 &7559725941840632263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -783,7 +889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6687449764061483766, guid: 3935d4a83a4ba3b45a0b27ec3fc1d336, type: 3}
       propertyPath: m_Materials.Array.size
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6687449764061483766, guid: 3935d4a83a4ba3b45a0b27ec3fc1d336, type: 3}
       propertyPath: m_Materials.Array.data[0]

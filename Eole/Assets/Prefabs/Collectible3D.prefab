@@ -183,7 +183,9 @@ MonoBehaviour:
   baseCursor: {fileID: 2800000, guid: 2c67b23a960fbfc42bd5b8381be420d2, type: 3}
   handCursor: {fileID: 2800000, guid: 2c5c10586b88ecd4da82e3212d0d3174, type: 3}
   collectibleVFXManager: {fileID: 0}
-  distanceToCamera: 0.5
+  distanceToCamera: 0
+  rotationSpeed: 250
+  text: Ah Shit Here We Go Again !!!!!
   alreadyActivated: 0
   collectibleActive: 0
   targetPos: {x: 0, y: 0, z: 0}
@@ -228,7 +230,7 @@ Transform:
   m_GameObject: {fileID: 8286276703677897158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.48457, y: 0.48457, z: 0.48457}
+  m_LocalScale: {x: 0.18788232, y: 0.18788232, z: 0.18788232}
   m_Children: []
   m_Father: {fileID: 8286276702051484705}
   m_RootOrder: 1
@@ -295,7 +297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2194213269461152836, guid: 443d82f7d6657654d84d272614732a27, type: 3}
       propertyPath: m_Materials.Array.size
-      value: 0
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 2194213269461152836, guid: 443d82f7d6657654d84d272614732a27, type: 3}
       propertyPath: m_Materials.Array.data[0]

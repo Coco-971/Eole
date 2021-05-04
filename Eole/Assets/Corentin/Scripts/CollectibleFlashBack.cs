@@ -14,6 +14,8 @@ public class CollectibleFlashBack : MonoBehaviour
 	[Header("Values")]
 	public float maxDistanceToExit;
 
+	public string text;
+
 	[Header("Booleans")]
 	public bool collectibleActivated;
 	public bool alreadyActivated;
@@ -63,9 +65,10 @@ public class CollectibleFlashBack : MonoBehaviour
 		{
 			closestAirColumn.GetComponent<AirColumnManager>().collectibleActivated++;
 			
-            //VFX
+            //SFX VFX
             collectibleVFXManager.CollectibleValidationVFX();
-            
+			closestAirColumn.GetComponent<AirColumnSFX>().AirColumnUpdate();
+
 		}
 		activatedTimes++;
 	}

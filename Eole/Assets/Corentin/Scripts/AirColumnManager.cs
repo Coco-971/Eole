@@ -7,6 +7,9 @@ public class AirColumnManager : MonoBehaviour
     [Header("References")]
     public GameObject airColumnVFX;
 
+	//SFX
+	public AirColumnSFX airColumnSFX;
+
 	[Header("Booleans")]
 	public bool isOn;
 
@@ -21,6 +24,9 @@ public class AirColumnManager : MonoBehaviour
 		airColumnVFX = GameObject.Find("AirColumnVFX");
 		isOn = false;
 		airColumnVFX.SetActive(false);
+
+		//SFX
+		airColumnSFX = GetComponent<AirColumnSFX>();
 	}
 
 	void OnTriggerStay(Collider other)
@@ -46,5 +52,6 @@ public class AirColumnManager : MonoBehaviour
 		yield return new WaitForSeconds(activationDelay);
 		airColumnVFX.SetActive(true);
 		isOn = true;
+		airColumnSFX.AirColumnActivation();
 	}
 }

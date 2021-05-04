@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6266319515395034021}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Turbine
-  m_TagString: Untagged
+  m_TagString: Turbine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6266319515545260518}
   - component: {fileID: 6266319515545260519}
   - component: {fileID: 6266319515545260516}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: TurbineMesh
   m_TagString: Turbine
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c15a7a311d46f9d43b3fa118d7f1b538, type: 2}
+  - {fileID: 2100000, guid: baaa7d526a99ce141a32d3079dc4db63, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -139,9 +139,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurbineVFX
       objectReference: {fileID: 0}
+    - target: {fileID: 934577569229455911, guid: 4f0220a2b1d49974489f4395551fa6db, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2075878901444155902, guid: 4f0220a2b1d49974489f4395551fa6db, type: 3}
       propertyPath: m_Materials.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2075878901444155902, guid: 4f0220a2b1d49974489f4395551fa6db, type: 3}
       propertyPath: m_Materials.Array.data[0]

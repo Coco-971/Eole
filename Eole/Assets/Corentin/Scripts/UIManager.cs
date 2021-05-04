@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
@@ -8,12 +10,15 @@ public class UIManager : MonoBehaviour
 	[Header("References")]
 	public GameObject InGameUI;
 	public GameObject PauseUI;
-	public GameObject player;
+	public GameObject collectibleTextGameObject;
+	public TextMeshProUGUI collectibleText;
+	GameObject player;
 	Mover moverRef;
 	Abilities abilitiesRef;
-	public GameObject camera;
+	GameObject camera;
 	CameraManager cameraManagerRef;
 	Collector collectorRef;
+	Slider slider;
 
 	[Header("Values")]
 	float initialCameraRot;
@@ -25,19 +30,35 @@ public class UIManager : MonoBehaviour
 	{
 		InGameUI = GameObject.Find("InGameUI");
 		PauseUI = GameObject.Find("PauseUI");
+		collectibleTextGameObject = GameObject.Find("CollectibleText");
+		collectibleText = collectibleTextGameObject.GetComponent<TextMeshProUGUI>();
 		player = GameObject.Find("Player");
 		moverRef = player.GetComponent<Mover>();
 		abilitiesRef = player.GetComponent<Abilities>();
 		camera = GameObject.Find("Camera");
 		cameraManagerRef = camera.GetComponent<CameraManager>();
 		collectorRef = camera.GetComponent<Collector>();
+		slider = InGameUI.GetComponentInChildren<Slider>();
 
 		InGameUI.SetActive(true);
 		PauseUI.SetActive(false);
+		collectibleTextGameObject.SetActive(false);
 	}
 
 	void Update()
     {
+		slider.value = abilitiesRef.breezeEnergyInSeconds;
+
+		if (collectorRef.collecting)
+		{
+			collectibleTextGameObject.SetActive(true);
+			collectibleText.SetText(collectorRef.closestCollectibleText);
+		}
+		else
+		{
+			collectibleTextGameObject.SetActive(false);
+		}
+
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 			if (!paused)
@@ -73,6 +94,9 @@ public class UIManager : MonoBehaviour
 			abilitiesRef.GlideEnd();
 			abilitiesRef.BreezeEnd();
 		}
+
+		//SFX
+		UI_SFXMethods.CancelUI_SFX();
 	}
 
 	public void Resume()
@@ -97,11 +121,16 @@ public class UIManager : MonoBehaviour
 			Cursor.lockState = CursorLockMode.Locked;
 			Cursor.visible = false;
 		}
+		//SFX
+		UI_SFXMethods.ValidateUI_SFX();
 	}
 
 	public void Reset()
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+		//SFX
+		UI_SFXMethods.ClickUI_SFX();
 	}
 
 	public void Save()

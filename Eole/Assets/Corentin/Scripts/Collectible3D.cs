@@ -12,10 +12,14 @@ public class Collectible3D : MonoBehaviour
 	public Texture2D baseCursor;
 	public Texture2D handCursor;
 
+	//SFX VFX
     public CollectibleVFXManager collectibleVFXManager;
 
 	[Header("Values")]
-	[Range(0f, 2f)] public float distanceToCamera;
+	[Range(-0.5f, 0.5f)] public float distanceToCamera;
+	public float rotationSpeed;
+
+	public string text;
 
 	[Header("Booleans")]
 	public bool alreadyActivated;
@@ -31,6 +35,8 @@ public class Collectible3D : MonoBehaviour
 		cameraRef = GameObject.Find("Camera").GetComponent<Camera>();
 		collectorRef = cameraRef.GetComponent<Collector>();
 		player = FindObjectOfType<Mover>().transform;
+
+		//VFX
 		collectibleVFXManager = GetComponent<CollectibleVFXManager>();
 
 		alreadyActivated = false;
@@ -76,14 +82,14 @@ public class Collectible3D : MonoBehaviour
 	void Update()
 	{
 		targetPos = Vector3.Lerp(transform.position, cameraRef.transform.position, 0.5f) + cameraRef.transform.forward * distanceToCamera;
-
+		
 		if (collectibleActive)
 		{
 			if (Input.GetMouseButton(0))
 			{
 				Cursor.SetCursor(handCursor, Vector2.zero, CursorMode.Auto);
 				Vector3 rotation = player.right * Input.GetAxis("Mouse Y") + player.forward * -Input.GetAxis("Mouse X");
-				transform.Rotate(rotation * Time.deltaTime * 1000, Space.World);
+				transform.Rotate(rotation * Time.deltaTime * rotationSpeed, Space.World);
 			}
 			else
 			{
@@ -102,6 +108,9 @@ public class Collectible3D : MonoBehaviour
 		if (activatedTimes < 1)
 		{
 			closestAirColumn.GetComponent<AirColumnManager>().collectibleActivated++;
+
+			//SFX
+			closestAirColumn.GetComponent<AirColumnSFX>().AirColumnUpdate();
 		}
 		activatedTimes++;
 
