@@ -292,6 +292,7 @@ MonoBehaviour:
   Banks:
   - Common
   - Island1
+  - Island2
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

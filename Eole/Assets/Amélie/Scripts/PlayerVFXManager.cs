@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 using UnityEngine.Rendering;
+using FMODUnity;
 
 public class PlayerVFXManager : MonoBehaviour
 {
     [Header("References")]
     public GameObject playerVFX;
+    public PlayerSFXManager playerSFXManager;
     public Camera mainCamera;
     public VisualEffect cameraVFXGraph;
 
@@ -51,6 +53,7 @@ public class PlayerVFXManager : MonoBehaviour
     private float ghostMaterial_timer;
     private bool canSeeGhosts = false;
 
+
     void Awake()
 	{
         playerVFX = GameObject.Find("PlayerVFX");
@@ -58,6 +61,8 @@ public class PlayerVFXManager : MonoBehaviour
 		mainCamera = GameObject.Find("Camera").GetComponent<Camera>();
 
         cameraVFXGraph = GameObject.Find("CameraVFX").GetComponent<VisualEffect>();
+
+        playerSFXManager = GetComponent<PlayerSFXManager>();
 
         collectible3D_Volume = GameObject.Find("Collectible3D_Volume").GetComponent<Volume>();
         collectibleFlashback_Volume = GameObject.Find("CollectibleFlashback_Volume").GetComponent<Volume>();
@@ -71,28 +76,17 @@ public class PlayerVFXManager : MonoBehaviour
 
     // Ghost Methods
 
-
-    public void ForceField_ON()
-    {
-
-    }
-
-
-
-    // référence à ton paramètre qui contrôle le dissolve amount + un bool + un timer qui gère les transitions smooth de l'effet + une duration (float) + une animation curve ( AnimationCurve, polish)
-
-
-
-
     public void Ghosts_ON() // Quand on doit activer l'effet
     {
         ghostMaterial_timer = 0;
         canSeeGhosts = true;
+        playerSFXManager.GhostON();
     }
 
     public void Ghosts_OFF() // Quand on doit désactiver l'effet
     {
         canSeeGhosts = false;
+        playerSFXManager.GhostOFF();
     }
 
     private void Ghost_Fader() // Dans update
@@ -118,6 +112,8 @@ public class PlayerVFXManager : MonoBehaviour
             glideVFX_isActive = true;
 
             TrailParticlesVFX_On();
+
+            playerSFXManager.Glide_ON();
         }
     }
 
@@ -128,6 +124,8 @@ public class PlayerVFXManager : MonoBehaviour
             glideVFX_isActive = false;
 
             TrailParticlesVFX_Off();
+
+            playerSFXManager.Glide_OFF();
         }
     }
 
@@ -141,6 +139,7 @@ public class PlayerVFXManager : MonoBehaviour
             mainCamera.fieldOfView = breezeVFX_minMaxFOV.y; // Getting the max value
 
             TrailParticlesVFX_On();
+            playerSFXManager.BreezeSFX_ON();
         }
     }
 
@@ -153,6 +152,7 @@ public class PlayerVFXManager : MonoBehaviour
             mainCamera.fieldOfView = breezeVFX_minMaxFOV.x; // Getting the min Value
 
             TrailParticlesVFX_Off();
+            playerSFXManager.BreezeSFX_OFF();
         }
     }
 
