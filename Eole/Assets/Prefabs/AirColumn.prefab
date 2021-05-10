@@ -320,7 +320,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.36320752, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -963,7 +963,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 2
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1639,8 +1639,8 @@ ParticleSystem:
     y:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
-      minScalar: 6
+      scalar: 4
+      minScalar: 8
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1798,8 +1798,8 @@ ParticleSystem:
     orbitalY:
       serializedVersion: 2
       minMaxState: 3
-      scalar: -10
-      minScalar: 10
+      scalar: -8
+      minScalar: 8
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -4036,9 +4036,9 @@ ParticleSystem:
     ratio: 1
     lifetime:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 0.2
-      minScalar: 1
+      minScalar: 0.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -4095,7 +4095,7 @@ ParticleSystem:
     dieWithParticles: 0
     sizeAffectsWidth: 1
     sizeAffectsLifetime: 0
-    inheritParticleColor: 1
+    inheritParticleColor: 0
     generateLightingData: 0
     splitSubEmitterRibbons: 0
     attachRibbonsToTransform: 0
@@ -4103,7 +4103,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.18396229, g: 1, b: 0.99216515, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4228,7 +4228,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.3160377, g: 1, b: 0.97349095, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4931,6 +4931,7 @@ GameObject:
   - component: {fileID: 6720901780722440029}
   - component: {fileID: 6720901780722440031}
   - component: {fileID: 6720901780722440016}
+  - component: {fileID: 451173728}
   m_Layer: 13
   m_Name: AirColumn
   m_TagString: AirColumn
@@ -4983,10 +4984,26 @@ MonoBehaviour:
   airColumnVFX: {fileID: 0}
   airColumnSFX: {fileID: 0}
   isOn: 0
+  activating: 0
   minToActivate: 1
   collectibleActivated: 0
   airColumnStrenght: 100
   activationDelay: 3.5
+--- !u!114 &451173728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6720901780722440017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94126b96b9e2e27459aab9db8cb61843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  airColumnUpdate: event:/AirColumn/AirColumnUpdate
+  airColumnActivation: event:/AirColumn/AirColumnActivation
+  airColumnIdleON: event:/AirColumn/AirColumnIdleON
 --- !u!1 &6720901781420798362
 GameObject:
   m_ObjectHideFlags: 0
@@ -5004,7 +5021,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6720901781420798373
 Transform:
@@ -5401,7 +5418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9217949042439906399, guid: 831b5a9a0aaa7784781b0a979cdfeba0, type: 3}
       propertyPath: m_Materials.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9217949042439906399, guid: 831b5a9a0aaa7784781b0a979cdfeba0, type: 3}
       propertyPath: m_Materials.Array.data[0]
