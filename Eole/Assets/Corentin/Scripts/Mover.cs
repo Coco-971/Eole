@@ -13,10 +13,6 @@ public class Mover : MonoBehaviour
 	public Animator animator;
 	public PlayerVFXManager playerVFXManager;
 	public UIManager UIManager;
-    
-    //SFX
-    //public PlayerSFX_MGR playerSFX_MGR;
-    //
 
 	[Header("Booleans")]
 	public bool canMove;
@@ -50,7 +46,6 @@ public class Mover : MonoBehaviour
 		UIManager = GameObject.Find("UI").GetComponent<UIManager>();
 
 		canMove = true;
-		maxSpeed = 5;
 
 		currentMoveSpeed = baseMoveSpeed;
 	}
@@ -61,6 +56,11 @@ public class Mover : MonoBehaviour
 		inputDirection.z = Input.GetAxis("Vertical");
 
 		grounded = Physics.CheckSphere(transform.position, body.radius - 0.1f, whatIsGround);
+
+		if (grounded)
+		{
+			maxSpeed = 3;
+		}
 
 		if (grounded && canMove)
 		{

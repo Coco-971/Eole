@@ -13,6 +13,7 @@ public class FallManager : MonoBehaviour
 
 	[Header("Booleans")]
 	public bool grounded;
+	public bool respawning;
 
 	[Header("Values")]
 	public int secondsSaved;
@@ -28,6 +29,8 @@ public class FallManager : MonoBehaviour
 		moverRef = GetComponent<Mover>();
 		cycler = 0;
 		lastPos = new Vector3[secondsSaved + 1];
+
+		respawning = false;
 
 		//SFX
 		playerSFXManager = GetComponent<PlayerSFXManager>();
@@ -47,10 +50,11 @@ public class FallManager : MonoBehaviour
 			cycler += Time.deltaTime;
 		}
 
-		if (transform.position.y < lastPos[0].y - minAltitudeToTriggerRespawn)
+		if (transform.position.y < lastPos[0].y - minAltitudeToTriggerRespawn && !respawning)
 		{
 			StartCoroutine(Respawn(lastPos[0]));
 			fader.SetBool("InstantFade", true);
+			respawning = true;
 		}
     }
 
@@ -67,5 +71,6 @@ public class FallManager : MonoBehaviour
 
 		yield return new WaitForSeconds(0.1f);
 		fader.SetBool("InstantFade", false);
+		respawning = false;
 	}
 }

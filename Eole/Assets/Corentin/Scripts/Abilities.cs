@@ -54,7 +54,8 @@ public class Abilities : MonoBehaviour
 	public float teleportDelay;
 
 	float timer = 0;
-	
+	int randomNumber = 1;
+	bool randomizing = false;
 
 	void Awake()
 	{
@@ -83,6 +84,11 @@ public class Abilities : MonoBehaviour
 	void Update()
 	{
 		grounded = moverRef.grounded;
+
+		if (!randomizing)
+		{
+			StartCoroutine(Randomize());
+		}
 
 		if (canAbility)
 		{
@@ -150,6 +156,8 @@ public class Abilities : MonoBehaviour
 				{
 					playerSFXmanager.TouchGround();
 					wasAirborn = false;
+					playerSFXmanager.Falling_OFF();
+					falling = true;
 				}
 			}
 			else
@@ -163,11 +171,6 @@ public class Abilities : MonoBehaviour
 						playerSFXmanager.Falling_ON();
 						falling = false;
 					}
-				}
-				else
-				{
-					playerSFXmanager.Falling_OFF();
-					falling = true;
 				}
 			}
 		}
@@ -223,7 +226,6 @@ public class Abilities : MonoBehaviour
 
 	public void BreezeEnd()
 	{
-		moverRef.maxSpeed = 3;
 		moverRef.canMove = true;
 		breezing = false;
 		rb.useGravity = true;
@@ -231,12 +233,20 @@ public class Abilities : MonoBehaviour
 		playerVFXManager.BreezeVFXIntensity_Off();
 	}
 
+	IEnumerator Randomize()
+	{
+		randomizing = true;
+		randomNumber = Random.Range(1, 10);
+		yield return new WaitForSeconds(3);
+		randomizing = false;
+	}
+
 	void OnTriggerStay(Collider other)
 	{
 		if (other.GetComponent<Rigidbody>() == true && breezing)
 		{
 			Rigidbody objRb = other.GetComponent<Rigidbody>();
-			objRb.AddExplosionForce(turbulenceForce, transform.position, 0);
+			objRb.AddExplosionForce(turbulenceForce, transform.position * randomNumber, 0);
 			objRb.AddForce(transform.up * turbulenceUp);
 		}
 

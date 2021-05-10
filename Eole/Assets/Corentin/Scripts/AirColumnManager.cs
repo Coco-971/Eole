@@ -12,6 +12,7 @@ public class AirColumnManager : MonoBehaviour
 
 	[Header("Booleans")]
 	public bool isOn;
+	public bool activating;
 
 	[Header("Values")]
 	public int minToActivate;
@@ -23,6 +24,7 @@ public class AirColumnManager : MonoBehaviour
 	{
 		airColumnVFX = GameObject.Find("AirColumnVFX");
 		isOn = false;
+		activating = false;
 		airColumnVFX.SetActive(false);
 
 		//SFX
@@ -39,10 +41,11 @@ public class AirColumnManager : MonoBehaviour
 	}
 
     //VFX
-    private void Update()
+    void Update()
     {
-        if (collectibleActivated >= minToActivate)
+        if (collectibleActivated >= minToActivate && !activating)
         {
+			activating = true;
 			StartCoroutine(Activation());
         }
     }
