@@ -509,8 +509,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2
-  m_Center: {x: 0, y: 1.5, z: 0}
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 1.5, z: 1}
 --- !u!1 &7559725942328076005
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +561,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.4
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
@@ -643,7 +643,7 @@ MonoBehaviour:
   jumpForce: 40
   glideSmoother: 90
   glideDescentRate: 1
-  breezeForce: 20
+  breezeForce: 15
   breezeDuration: 2
   breezeDurationModifier: 0
   breezeEnergyInSeconds: 0
@@ -651,7 +651,7 @@ MonoBehaviour:
   breezeTurbineForceAdder: 2
   breezeTurbineMultiplier: 1
   breezeTurbineSecondAdder: 2
-  turbulenceForce: 40
+  turbulenceForce: 15
   turbulenceUp: 35
   teleportDelay: 0.3
 --- !u!114 &7559725942328076015
@@ -670,6 +670,7 @@ MonoBehaviour:
   fader: {fileID: 0}
   playerSFXManager: {fileID: 0}
   grounded: 0
+  respawning: 0
   secondsSaved: 3
   minAltitudeToTriggerRespawn: 30
   respawnDelay: 0.5
