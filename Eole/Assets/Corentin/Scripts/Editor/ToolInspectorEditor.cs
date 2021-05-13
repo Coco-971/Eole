@@ -11,9 +11,15 @@ public class ToolInspectorEditor : Editor
 		DrawDefaultInspector();
 
 		PrefabInstantiateTool script = (PrefabInstantiateTool)target;
-		if(GUILayout.Button("Instatiate"))
+		if (GUILayout.Button("Instatiate"))
 		{
+			script.Destroy();
 			script.InstantiatePrefab();
 		}
+
+		if (GUILayout.Button("Destroy"))
+		{
+			script.Destroy();
+		}		
 	}
 }

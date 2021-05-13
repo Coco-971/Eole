@@ -36,5 +36,6 @@ Material:
     m_Floats:
     - Boolean_291C18EC: 1
     - Vector1_2182699E: 0
+    - Vector1_BE54D801: 1.4
     m_Colors: []
   m_BuildTextureStacks: []
