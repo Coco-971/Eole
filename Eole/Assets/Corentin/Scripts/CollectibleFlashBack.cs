@@ -61,16 +61,7 @@ public class CollectibleFlashBack : MonoBehaviour
 
 		transform.GetChild(0).gameObject.SetActive(true);
 
-		if (activatedTimes < 1)
-		{
-			closestAirColumn.GetComponent<AirColumnManager>().collectibleActivated++;
-			
-            //SFX VFX
-            collectibleVFXManager.CollectibleValidationVFX();
-			closestAirColumn.GetComponent<AirColumnSFX>().AirColumnUpdate();
-
-		}
-		activatedTimes++;
+		
 	}
 
 	void Update()
@@ -88,6 +79,15 @@ public class CollectibleFlashBack : MonoBehaviour
 
 	public void DisableCollectible()
 	{
+		if (activatedTimes < 1)
+		{
+			closestAirColumn.GetComponent<AirColumnManager>().collectibleActivated++;
+
+			//SFX VFX
+			collectibleVFXManager.CollectibleValidationVFX();
+			closestAirColumn.GetComponent<AirColumnSFX>().AirColumnUpdate();
+		}
+		activatedTimes++;
 		StartCoroutine(Disappear());
 		collectibleActivated = false;
 		collectorRef.collectingMoveSpeedMultiplier = 1;
