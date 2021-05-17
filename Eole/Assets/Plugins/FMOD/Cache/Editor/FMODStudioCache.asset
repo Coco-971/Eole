@@ -600,7 +600,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/MasterFixed.strings.bank
   Name: MasterFixed.strings
   StudioPath: bank:/MasterFixed.strings
-  lastModified: 637568669490490701
+  lastModified: 637562580086011957
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -831,7 +831,7 @@ MonoBehaviour:
   - {fileID: 4432936371088558651}
   StringsBanks:
   - {fileID: -2083783134257439843}
-  stringsBankWriteTime: 637568669490490701
+  stringsBankWriteTime: 637562580086011957
   cacheVersion: 6
 --- !u!114 &121989807240821473
 MonoBehaviour:
@@ -1268,7 +1268,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/MasterFixed.bank
   Name: MasterFixed
   StudioPath: bank:/MasterFixed
-  lastModified: 637568669490470695
+  lastModified: 637562580085762632
   LoadResult: 0
   FileSizes: []
   Exists: 1
