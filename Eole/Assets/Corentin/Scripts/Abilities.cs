@@ -39,7 +39,7 @@ public class Abilities : MonoBehaviour
 	public float breezeForce;
 	float breezeForceModifier;
 	public float breezeDuration;
-	public float breezeDurationModifier;
+	float breezeDurationModifier;
 	public float breezeEnergyInSeconds;
 	public float breezeTurbineDuration;
 	public float breezeTurbineForceAdder;
@@ -54,9 +54,6 @@ public class Abilities : MonoBehaviour
 	public float teleportDelay;
 
 	float timer = 0;
-
-	/*float randomNumber = 1;
-	bool randomizing = false;*/
 
 	void Awake()
 	{
@@ -85,11 +82,6 @@ public class Abilities : MonoBehaviour
 	void Update()
 	{
 		grounded = moverRef.grounded;
-
-		/*if (!randomizing)
-		{
-			StartCoroutine(Randomize());
-		}*/
 
 		if (canAbility)
 		{
@@ -234,21 +226,22 @@ public class Abilities : MonoBehaviour
 		playerVFXManager.BreezeVFXIntensity_Off();
 	}
 
-	/*IEnumerator Randomize()
-	{
-		randomizing = true;
-		randomNumber = Random.Range(0f, 2f);
-		yield return new WaitForSeconds(3);
-		randomizing = false;
-	}*/
-
 	void OnTriggerStay(Collider other)
 	{
-		if (other.GetComponent<Rigidbody>() == true && breezing)
-		{
+		if (other.GetComponent<Rigidbody>() && breezing)
+		{	
 			Rigidbody objRb = other.GetComponent<Rigidbody>();
 			objRb.AddExplosionForce(turbulenceForce, transform.position, 0);
 			objRb.AddForce(transform.up * turbulenceUp);
+		}
+
+		if (other.GetComponent<Cloth>() && breezing)
+		{
+			other.GetComponent<Cloth>().externalAcceleration = transform.up * turbulenceUp;
+		}
+		else if (other.GetComponent<Cloth>() && !breezing)
+		{
+			other.GetComponent<Cloth>().externalAcceleration = Vector3.zero;
 		}
 
 		if (other.tag == "Hole" && canTakeHole && breezing)
@@ -294,6 +287,11 @@ public class Abilities : MonoBehaviour
 
 	void OnTriggerExit(Collider other)
 	{
+		if (other.GetComponent<Cloth>())
+		{
+			other.GetComponent<Cloth>().externalAcceleration = Vector3.zero;
+		}
+
 		if (other.tag == "AirColumn")
 		{
 			inAirColumn = false;

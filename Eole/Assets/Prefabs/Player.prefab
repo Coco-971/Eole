@@ -606,7 +606,6 @@ MonoBehaviour:
   canMove: 0
   grounded: 0
   breezing: 0
-  currentMoveSpeed: 0
   baseMoveSpeed: 15
   inAirMoveSpeed: 40
   maxSpeed: 3
@@ -645,14 +644,13 @@ MonoBehaviour:
   glideDescentRate: 1
   breezeForce: 13
   breezeDuration: 3
-  breezeDurationModifier: 0
   breezeEnergyInSeconds: 0
   breezeTurbineDuration: 3
   breezeTurbineForceAdder: 2
   breezeTurbineMultiplier: 1
   breezeTurbineSecondAdder: 2
   turbulenceForce: 15
-  turbulenceUp: 35
+  turbulenceUp: 20
   teleportDelay: 0.3
 --- !u!114 &7559725942328076015
 MonoBehaviour:

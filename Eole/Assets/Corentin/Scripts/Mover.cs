@@ -21,7 +21,7 @@ public class Mover : MonoBehaviour
 	private bool touchedGround;
 
 	[Header("Values")]
-	public float currentMoveSpeed;
+	float currentMoveSpeed;
 	public float baseMoveSpeed;
 	public float inAirMoveSpeed;
 	public float maxSpeed;

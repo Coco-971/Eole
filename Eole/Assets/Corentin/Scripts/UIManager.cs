@@ -15,7 +15,7 @@ public class UIManager : MonoBehaviour
 	GameObject player;
 	Mover moverRef;
 	Abilities abilitiesRef;
-	GameObject camera;
+	GameObject mainCamera;
 	CameraManager cameraManagerRef;
 	Collector collectorRef;
 	Slider slider;
@@ -35,9 +35,9 @@ public class UIManager : MonoBehaviour
 		player = GameObject.Find("Player");
 		moverRef = player.GetComponent<Mover>();
 		abilitiesRef = player.GetComponent<Abilities>();
-		camera = GameObject.Find("Camera");
-		cameraManagerRef = camera.GetComponent<CameraManager>();
-		collectorRef = camera.GetComponent<Collector>();
+		mainCamera = GameObject.Find("Camera");
+		cameraManagerRef = mainCamera.GetComponent<CameraManager>();
+		collectorRef = mainCamera.GetComponent<Collector>();
 		slider = InGameUI.GetComponentInChildren<Slider>();
 
 		InGameUI.SetActive(true);
