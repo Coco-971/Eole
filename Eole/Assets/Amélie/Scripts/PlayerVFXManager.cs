@@ -214,14 +214,7 @@ public class PlayerVFXManager : MonoBehaviour
 
         // Breeze
 
-        if (breezeVFX_isActive)
-        {
-            breezeVFX_timer = Mathf.Clamp01(breezeVFX_timer += Time.deltaTime*2f);
-        }
-        else
-        {
-            breezeVFX_timer = Mathf.Clamp01(breezeVFX_timer -= Time.deltaTime*3f);
-        }
+
 
         // Collectible Volume
 
@@ -253,8 +246,21 @@ public class PlayerVFXManager : MonoBehaviour
 
         cameraVFXGraph.SetFloat(breezeVFX_AlphaPropertyName, breezeVFX_intensityVolumeCurve.Evaluate(breezeVFX_timer)); // wind effect around camera opacity
 
+
+
+    }
+
+    private void FixedUpdate()
+    {
+        if (breezeVFX_isActive)
+        {
+            breezeVFX_timer = Mathf.Clamp01(breezeVFX_timer += Time.deltaTime * 2f);
+        }
+        else
+        {
+            breezeVFX_timer = Mathf.Clamp01(breezeVFX_timer -= Time.deltaTime * 3f);
+        }
+
         mainCamera.fieldOfView = Mathf.Lerp(breezeVFX_minMaxFOV.x, breezeVFX_minMaxFOV.y, breezeVFX_intensityFOVCurve.Evaluate(breezeVFX_timer)); // interpolates beetween the min and max FOV values with the curve read by the timer
-
-
     }
 }
