@@ -14,7 +14,7 @@ public class Abilities : MonoBehaviour
 
 	//SFX VFX
     public PlayerVFXManager playerVFXManager;
-    public PlayerSFXManager playerSFXmanager;
+    public PlayerSFXManager playerSFXManager;
 
 	[Header("Booleans")]
 	public bool canAbility;
@@ -63,7 +63,7 @@ public class Abilities : MonoBehaviour
 		moverRef = GetComponent<Mover>();
 		fader = GameObject.Find("Fader").GetComponent<Animator>();
 		playerVFXManager = GetComponent<PlayerVFXManager>();
-		playerSFXmanager = GetComponent<PlayerSFXManager>();
+		playerSFXManager = GetComponent<PlayerSFXManager>();
 		UIManager = GameObject.Find("UI").GetComponent<UIManager>();
 
 		inAirColumn = false;
@@ -147,10 +147,11 @@ public class Abilities : MonoBehaviour
 				//SFX
 				if (wasAirborn)
 				{
-					playerSFXmanager.TouchGround();
+					playerSFXManager.TouchGround();
 					wasAirborn = false;
-					playerSFXmanager.Falling_OFF();
+					playerSFXManager.Falling_OFF();
 					falling = true;
+					playerVFXManager.TouchGroundVFX_Play();
 				}
 			}
 			else
@@ -161,7 +162,7 @@ public class Abilities : MonoBehaviour
 				{
 					if (falling)
 					{
-						playerSFXmanager.Falling_ON();
+						playerSFXManager.Falling_ON();
 						falling = false;
 					}
 				}
@@ -276,12 +277,17 @@ public class Abilities : MonoBehaviour
 			StartCoroutine(Turbining());
 
 			//SFX
-			playerSFXmanager.TakeBooster();
+			playerSFXManager.TakeBooster();
 		}
 
 		if (other.tag == "Hole" && canTakeHole && breezing)
 		{
-			playerSFXmanager.TakePassage();
+			playerSFXManager.TakePassage();
+		}
+
+		if (other.tag == "Island")
+		{
+			playerSFXManager.SetMusicProgressionGoal(FindClosest(other.transform.position).GetComponent<AirColumnManager>().collectibleActivated);
 		}
 	}
 
@@ -300,6 +306,11 @@ public class Abilities : MonoBehaviour
 		if (other.tag == "Hole")
 		{
 			StartCoroutine(BreezeHoleCooldown());
+		}
+
+		if (other.tag == "Island")
+		{
+			playerSFXManager.SetMusicProgressionGoal(0);
 		}
 	}
 
@@ -330,6 +341,26 @@ public class Abilities : MonoBehaviour
 	{
 		yield return new WaitForSeconds(2);
 		canTakeHole = true;
+	}
+
+	public GameObject FindClosest(Vector3 fromThisPosition)
+	{
+		GameObject[] column;
+		column = GameObject.FindGameObjectsWithTag("AirColumn");
+		GameObject closest = null;
+		float distance = Mathf.Infinity;
+		Vector3 position = fromThisPosition;
+		foreach (GameObject obj in column)
+		{
+			Vector3 diff = obj.transform.position - position;
+			float curDistance = diff.sqrMagnitude;
+			if (curDistance < distance)
+			{
+				closest = obj;
+				distance = curDistance;
+			}
+		}
+		return closest;
 	}
 
 	/*

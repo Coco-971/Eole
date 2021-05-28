@@ -167,6 +167,37 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!1 &7066014856326014951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4934515986161143343}
+  m_Layer: 9
+  m_Name: CameraShakePivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4934515986161143343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7066014856326014951}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7559725940347340865}
+  m_Father: {fileID: 7559725942328076003}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7559725940347340864
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,13 +228,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7559725940347340864}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 44693800}
   - {fileID: 1842909639}
-  m_Father: {fileID: 7559725942328076003}
+  m_Father: {fileID: 4934515986161143343}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &7559725940347340877
@@ -222,7 +253,7 @@ Camera:
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
+  m_FocalLength: 20.78461
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -496,7 +527,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7559725942328076003}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &7559725940465574406
 SphereCollider:
@@ -545,9 +576,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -3.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7559725940347340865}
   - {fileID: 7559725940465574425}
   - {fileID: 4629148459828566571}
+  - {fileID: 4934515986161143343}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -763,6 +794,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   breezeVFX_AlphaPropertyName: breeze_MasterAlpha
   breezeVFX_minMaxFOV: {x: 60, y: 80}
+  breezeVFX_timer: 0
   trailParticlesVFX_RatePropertyName: trailParticles_Rate
   trailParticlesVFX_rateMinMax: {x: 0, y: 3}
   collectible3D_Volume: {fileID: 0}
@@ -793,6 +825,10 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   ghostFadeDuration: 2
+  intensity: 0.3
+  frequency: 0.15
+  lerpSpeed: 0.15
+  cam: {fileID: 0}
 --- !u!114 &621869526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -805,20 +841,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8102d840f7867749a3e9622526a12d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dyingEvent: 
-  respawnEvent: 
-  footstepEvent: 
-  touchGroundEvent: 
-  glideEvent: 
-  fallingEvent: 
-  breezeEvent: 
-  breezeActivationEvent: 
-  breezeParameter: 
-  takePassage: 
-  takeBooster: 
-  pickCollectibleEvent: 
-  activateCollectibleEvent: 
-  ghostEvent: 
+  dyingEvent: event:/Player/PlayerDeath
+  respawnEvent: event:/Player/PlayerRespawn
+  footstepEvent: event:/Player/PlayerFootstep
+  touchGroundEvent: event:/Player/PlayerTouchGround
+  glideEvent: event:/Player/PlayerGlide
+  fallingEvent: event:/Player/PlayerFalling
+  breezeEvent: event:/Player/PlayerBreeze
+  breezeActivationEvent: event:/Player/PlayerBreezeActivation
+  breezeParameter: BreezeActivation
+  takePassage: event:/Player/PlayerTakePassage
+  takeBooster: event:/Booster/BoosterActivation
+  pickCollectibleEvent: event:/Collectibles/CollectiblePick
+  activateCollectibleEvent: event:/Collectibles/CollectibleActivation
+  ghostEvent: event:/Collectibles/Ghost
+  musicEvent: event:/Music
+  musicProgressionParameter: MusicProgression
+  pauseMusicParameter: HideMusic
+  musicTransitionDuration: 1
 --- !u!1001 &7559725941840632263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -832,7 +872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2942965259420795884, guid: 3935d4a83a4ba3b45a0b27ec3fc1d336, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2942965259420795884, guid: 3935d4a83a4ba3b45a0b27ec3fc1d336, type: 3}
       propertyPath: m_LocalPosition.x
@@ -900,6 +940,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6687449764061483766, guid: 3935d4a83a4ba3b45a0b27ec3fc1d336, type: 3}
       propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687449764061483766, guid: 3935d4a83a4ba3b45a0b27ec3fc1d336, type: 3}
+      propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []

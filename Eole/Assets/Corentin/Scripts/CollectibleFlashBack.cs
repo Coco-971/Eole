@@ -8,8 +8,10 @@ public class CollectibleFlashBack : MonoBehaviour
 	public GameObject closestAirColumn;
 	public Transform player;
 	public Collector collectorRef;
-
+	
+	//SFX VFX
     public CollectibleVFXManager collectibleVFXManager;
+	public PlayerSFXManager playerSFXManager;
 
 	[Header("Values")]
 	public float maxDistanceToExit;
@@ -27,6 +29,7 @@ public class CollectibleFlashBack : MonoBehaviour
 		collectibleVFXManager = GetComponent<CollectibleVFXManager>();
 		player = GameObject.Find("Player").transform;
 		collectorRef = GameObject.Find("Camera").GetComponent<Collector>();
+		playerSFXManager = FindObjectOfType<PlayerSFXManager>();
 
 		alreadyActivated = false;
 
@@ -61,7 +64,7 @@ public class CollectibleFlashBack : MonoBehaviour
 
 		transform.GetChild(0).gameObject.SetActive(true);
 
-		
+		playerSFXManager.SetMusicToFlashBackMode(true);
 	}
 
 	void Update()
@@ -83,6 +86,8 @@ public class CollectibleFlashBack : MonoBehaviour
 		{
 			closestAirColumn.GetComponent<AirColumnManager>().collectibleActivated++;
 
+			playerSFXManager.SetMusicProgressionGoal(closestAirColumn.GetComponent<AirColumnManager>().collectibleActivated);
+
 			//SFX VFX
 			collectibleVFXManager.CollectibleValidationVFX();
 			closestAirColumn.GetComponent<AirColumnSFX>().AirColumnUpdate();
@@ -97,6 +102,8 @@ public class CollectibleFlashBack : MonoBehaviour
 	{
 		yield return new WaitForSeconds(collectorRef.playerVFXManager.ghostFadeDuration);
 		transform.GetChild(0).gameObject.SetActive(false);
+
+		playerSFXManager.SetMusicToFlashBackMode(false);
 	}
 
 	/*
