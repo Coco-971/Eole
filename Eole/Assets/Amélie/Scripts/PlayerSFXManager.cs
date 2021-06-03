@@ -61,6 +61,88 @@ public class PlayerSFXManager : MonoBehaviour
 
     FMOD.Studio.EventInstance eGhostONInstance;
 
+    [Header("Music")]
+
+    [FMODUnity.EventRef]
+    public string musicEvent;
+
+    [FMODUnity.ParamRef]
+    public string musicProgressionParameter;
+
+    [FMODUnity.ParamRef]
+    public string pauseMusicParameter;
+
+    public float musicTransitionDuration = 1;
+
+    private float musicCurrentState = 0;
+    private float musicCurrentGoal = 0;
+
+    FMOD.Studio.EventInstance eMusicInstance;
+    FMOD.Studio.PARAMETER_ID musicProgressionParameterId;
+    FMOD.Studio.PARAMETER_ID pauseMusicParameterId;
+
+    // Music Methods
+    void MusicParameter()
+    {
+        eMusicInstance = RuntimeManager.CreateInstance(musicEvent);
+
+        FMOD.Studio.PARAMETER_DESCRIPTION musicProgressionParam;
+
+        RuntimeManager.StudioSystem.getParameterDescriptionByName(musicProgressionParameter, out musicProgressionParam);
+        musicProgressionParameterId = musicProgressionParam.id;
+
+
+        FMOD.Studio.PARAMETER_DESCRIPTION pauseMusicParam;
+
+        RuntimeManager.StudioSystem.getParameterDescriptionByName(pauseMusicParameter, out pauseMusicParam);
+        pauseMusicParameterId = pauseMusicParam.id;
+
+        eMusicInstance.start();
+    }
+
+    public void SetMusicProgressionGoal(float goal)
+    {
+        musicCurrentGoal = goal;
+    }
+
+    public void SetMusicToFlashBackMode(bool onOff) // true to activate the modifier, false to disable it
+    {
+        if (onOff)
+        {
+            RuntimeManager.StudioSystem.setParameterByID(pauseMusicParameterId, 1);
+        }
+        else
+        {
+            RuntimeManager.StudioSystem.setParameterByID(pauseMusicParameterId, 0);
+        }
+    }
+
+    void MusicProgressionUpdate()
+    {
+        if(musicCurrentState != musicCurrentGoal)
+        {
+            if(musicCurrentGoal > musicCurrentState)
+            {
+                musicCurrentState += Time.deltaTime / musicTransitionDuration;
+
+                if(musicCurrentState >= musicCurrentGoal)
+                {
+                    musicCurrentState = musicCurrentGoal;
+                }
+            }
+            else if (musicCurrentGoal < musicCurrentState)
+            {
+                musicCurrentState -= Time.deltaTime / musicTransitionDuration;
+
+                if(musicCurrentState <= musicCurrentGoal)
+                {
+                    musicCurrentState = musicCurrentGoal;
+                }
+            }
+
+            RuntimeManager.StudioSystem.setParameterByID(musicProgressionParameterId, musicCurrentState);
+        }
+    }
 
 
     void BreezeParameter()
@@ -180,7 +262,6 @@ public class PlayerSFXManager : MonoBehaviour
     }
 
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -189,6 +270,8 @@ public class PlayerSFXManager : MonoBehaviour
 
         BreezeParameter();
         eGhostONInstance = RuntimeManager.CreateInstance(ghostEvent);
+
+        MusicParameter();
     }
 
     // Update is called once per frame
@@ -196,10 +279,46 @@ public class PlayerSFXManager : MonoBehaviour
     {
         BreezeSFX_Update();
 
+        MusicProgressionUpdate();
+
+        if (Input.GetKeyDown(KeyCode.Keypad0))
+        {
+            SetMusicProgressionGoal(0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad1))
+        {
+            SetMusicProgressionGoal(1);
+        }
 
         if (Input.GetKeyDown(KeyCode.Keypad2))
         {
-            UI_SFXMethods.CancelUI_SFX();
+            SetMusicProgressionGoal(2);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad3))
+        {
+            SetMusicProgressionGoal(3);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad4))
+        {
+            SetMusicProgressionGoal(4);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad5))
+        {
+            SetMusicProgressionGoal(5);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad9))
+        {
+            SetMusicToFlashBackMode(true);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad8))
+        {
+            SetMusicToFlashBackMode(false);
         }
     }
 }

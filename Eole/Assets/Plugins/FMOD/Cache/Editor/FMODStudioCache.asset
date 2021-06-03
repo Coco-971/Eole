@@ -244,6 +244,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-5471635973222690939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/HideMusic
+  m_EditorClassIdentifier: 
+  Name: HideMusic
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2686570602
+    data2: 2774085574
+  Exists: 1
 --- !u!114 &-5392301949006878234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,11 +620,11 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/MasterFixed.strings.bank
   Name: MasterFixed.strings
   StudioPath: bank:/MasterFixed.strings
-  lastModified: 637565788599401817
+  lastModified: 637578154659831737
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 2046
+    Value: 2182
   Exists: 1
 --- !u!114 &-1793834840052763650
 MonoBehaviour:
@@ -825,13 +845,16 @@ MonoBehaviour:
   - {fileID: 7104141415904362526}
   - {fileID: -5392301949006878234}
   - {fileID: -7780098458689853279}
+  - {fileID: 357821202253317832}
   EditorParameters:
   - {fileID: -1793834840052763650}
+  - {fileID: 4834311519314777426}
+  - {fileID: -5471635973222690939}
   MasterBanks:
   - {fileID: 4432936371088558651}
   StringsBanks:
   - {fileID: -2083783134257439843}
-  stringsBankWriteTime: 637565788599401817
+  stringsBankWriteTime: 637578154659831737
   cacheVersion: 6
 --- !u!114 &121989807240821473
 MonoBehaviour:
@@ -877,6 +900,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &357821202253317832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  guid: 48acf15cb505f141866a958d60fdff78
+  Banks:
+  - {fileID: 4432936371088558651}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 76800
 --- !u!114 &715678644599403214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1268,9 +1314,29 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/MasterFixed.bank
   Name: MasterFixed
   StudioPath: bank:/MasterFixed
-  lastModified: 637571202601400135
+  lastModified: 637578154659732013
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &4834311519314777426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicProgression
+  m_EditorClassIdentifier: 
+  Name: MusicProgression
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 3217581434
+    data2: 2924439225
   Exists: 1
 --- !u!114 &5307119594097794209
 MonoBehaviour:
