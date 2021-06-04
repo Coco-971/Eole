@@ -8,7 +8,6 @@ TagManager:
   - Hole
   - AirColumn
   - Turbine
-  - Island
   layers:
   - Default
   - TransparentFX

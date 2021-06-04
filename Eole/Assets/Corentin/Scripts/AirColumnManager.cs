@@ -13,7 +13,6 @@ public class AirColumnManager : MonoBehaviour
 	[Header("Booleans")]
 	public bool isOn;
 	public bool activating;
-	public bool changing;
 
 	[Header("Values")]
 	public int minToActivate;

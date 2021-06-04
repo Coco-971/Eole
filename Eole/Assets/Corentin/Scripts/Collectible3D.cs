@@ -14,7 +14,6 @@ public class Collectible3D : MonoBehaviour
 
 	//SFX VFX
     public CollectibleVFXManager collectibleVFXManager;
-	public PlayerSFXManager playerSFXManager;
 
 	[Header("Values")]
 	[Range(-0.5f, 0.5f)] public float distanceToCamera;
@@ -36,7 +35,6 @@ public class Collectible3D : MonoBehaviour
 		cameraRef = GameObject.Find("Camera").GetComponent<Camera>();
 		collectorRef = cameraRef.GetComponent<Collector>();
 		player = FindObjectOfType<Mover>().transform;
-		playerSFXManager = FindObjectOfType<PlayerSFXManager>();
 
 		//VFX
 		collectibleVFXManager = GetComponent<CollectibleVFXManager>();
@@ -110,8 +108,6 @@ public class Collectible3D : MonoBehaviour
 		if (activatedTimes < 1)
 		{
 			closestAirColumn.GetComponent<AirColumnManager>().collectibleActivated++;
-
-			playerSFXManager.SetMusicProgressionGoal(closestAirColumn.GetComponent<AirColumnManager>().collectibleActivated);
 
 			//SFX
 			closestAirColumn.GetComponent<AirColumnSFX>().AirColumnUpdate();

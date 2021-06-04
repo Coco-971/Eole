@@ -100,12 +100,12 @@ public class PlayerSFXManager : MonoBehaviour
         eMusicInstance.start();
     }
 
-    public void SetMusicProgressionGoal(float goal)
+    void SetMusicProgressionGoal(float goal)
     {
         musicCurrentGoal = goal;
     }
 
-    public void SetMusicToFlashBackMode(bool onOff) // true to activate the modifier, false to disable it
+    void SetMusicToFlashBackMode(bool onOff) // true to activate the modifier, false to disable it
     {
         if (onOff)
         {

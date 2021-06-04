@@ -53,7 +53,7 @@ Material:
     - Boolean_41ABF2CE: 0
     - Vector1_41500E7B: 0
     - Vector1_AC303D80: 1
-    - Vector1_F704B62A: 0.55
+    - Vector1_F704B62A: 1
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1

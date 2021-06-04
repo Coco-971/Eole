@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5327924481228745949}
   - component: {fileID: 7932070807657764887}
   - component: {fileID: 8436539730081905089}
-  - component: {fileID: -5053000389030237500}
   m_Layer: 10
   m_Name: HalfWall
   m_TagString: Untagged
@@ -92,21 +91,7 @@ BoxCollider:
   m_GameObject: {fileID: 8436539730081905090}
   m_Material: {fileID: 13400000, guid: 8f3f6f472bc5ab44887ae5c479bd22c9, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0000219, y: 0.5, z: 0.39498472}
   m_Center: {x: -0.50001097, y: 0.25, z: -0.1974887}
---- !u!64 &-5053000389030237500
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8436539730081905090}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 9017900131886464377, guid: 05fc8de8b89181045813865342df2142, type: 3}

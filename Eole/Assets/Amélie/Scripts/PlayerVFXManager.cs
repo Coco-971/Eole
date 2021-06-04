@@ -30,7 +30,7 @@ public class PlayerVFXManager : MonoBehaviour
     public Vector2 breezeVFX_minMaxFOV = new Vector2(60, 80);
 
     private bool breezeVFX_isActive = false;
-    public float breezeVFX_timer = 0f;
+    private float breezeVFX_timer = 0f;
 
     [Header("Trail Particles")]
     public string trailParticlesVFX_RatePropertyName = "trailParticles_Rate";
@@ -53,19 +53,8 @@ public class PlayerVFXManager : MonoBehaviour
     private float ghostMaterial_timer;
     private bool canSeeGhosts = false;
 
-	[Header("Shake Values")]
-	[SerializeField] float intensity = 0.5f;
-	[SerializeField] float frequency = 0.05f;
-	[SerializeField] float lerpSpeed = 0.05f;
-	float timer = 0f;
 
-	Vector3 targetPos;
-	Vector3 velocity;
-	Vector3 initPos;
-	public Transform cam;
-
-
-	void Awake()
+    void Awake()
 	{
         playerVFX = GameObject.Find("PlayerVFX");
 
@@ -83,9 +72,6 @@ public class PlayerVFXManager : MonoBehaviour
         playerVFX.GetComponent<VisualEffect>().SetFloat(trailParticlesVFX_RatePropertyName, trailParticlesVFX_rateMinMax.x); // Getting the min value
 
         canSeeGhosts = false;
-
-		cam = Camera.main.transform.parent;
-		initPos = cam.localPosition;
 	}
 
     // Ghost Methods
@@ -150,6 +136,8 @@ public class PlayerVFXManager : MonoBehaviour
         {
             breezeVFX_isActive = true;
 
+            mainCamera.fieldOfView = breezeVFX_minMaxFOV.y; // Getting the max value
+
             TrailParticlesVFX_On();
             playerSFXManager.BreezeSFX_ON();
         }
@@ -160,6 +148,8 @@ public class PlayerVFXManager : MonoBehaviour
         if (breezeVFX_isActive)
         {
             breezeVFX_isActive = false;
+
+            mainCamera.fieldOfView = breezeVFX_minMaxFOV.x; // Getting the min Value
 
             TrailParticlesVFX_Off();
             playerSFXManager.BreezeSFX_OFF();
@@ -256,40 +246,21 @@ public class PlayerVFXManager : MonoBehaviour
 
         cameraVFXGraph.SetFloat(breezeVFX_AlphaPropertyName, breezeVFX_intensityVolumeCurve.Evaluate(breezeVFX_timer)); // wind effect around camera opacity
 
-		if (breezeVFX_isActive)
-		{
-			breezeVFX_timer = Mathf.Clamp01(breezeVFX_timer += Time.deltaTime * 2f);
-		}
-		else
-		{
-			breezeVFX_timer = Mathf.Clamp01(breezeVFX_timer -= Time.deltaTime * 3f);
-		}
 
-		mainCamera.fieldOfView = Mathf.Lerp(breezeVFX_minMaxFOV.x, breezeVFX_minMaxFOV.y, breezeVFX_intensityFOVCurve.Evaluate(breezeVFX_timer)); // interpolates beetween the min and max FOV values with the curve read by the timer
-		
-		if(breezeVFX_timer > 0)
-		{
-			CamShake(breezeVFX_intensityFOVCurve.Evaluate(breezeVFX_timer));
-			cam.localPosition = Vector3.SmoothDamp(cam.localPosition, targetPos, ref velocity, lerpSpeed);
-		}
-		else
-		{
-			cam.localPosition = initPos;
-		}
-	}
 
-	public void CamShake(float t)
-	{
-		if (timer >= frequency)
-		{
-			Vector3 randomPoint = initPos + Random.insideUnitSphere * intensity * t;
+    }
 
-			targetPos = randomPoint;
-			timer = 0f;
-		}
-		else
-		{
-			timer += Time.unscaledDeltaTime;
-		}
-	}
+    private void FixedUpdate()
+    {
+        if (breezeVFX_isActive)
+        {
+            breezeVFX_timer = Mathf.Clamp01(breezeVFX_timer += Time.deltaTime * 2f);
+        }
+        else
+        {
+            breezeVFX_timer = Mathf.Clamp01(breezeVFX_timer -= Time.deltaTime * 3f);
+        }
+
+        mainCamera.fieldOfView = Mathf.Lerp(breezeVFX_minMaxFOV.x, breezeVFX_minMaxFOV.y, breezeVFX_intensityFOVCurve.Evaluate(breezeVFX_timer)); // interpolates beetween the min and max FOV values with the curve read by the timer
+    }
 }
