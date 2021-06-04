@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Boulder_Mat
+  m_Shader: {fileID: -6465566751694194690, guid: 733f57b137680b84e9e83a80652d87d5, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_26EF69DF:
+        m_Texture: {fileID: 2800000, guid: 5c530ea01e0d45f48a3559a4ade41612, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_88813CC4:
+        m_Texture: {fileID: 2800000, guid: 482f0366370f2f2458534fa4fe41efec, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_98238485:
+        m_Texture: {fileID: 2800000, guid: 5efaff8410a3eee4684c2da13d71d79e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_B1096D9F:
+        m_Texture: {fileID: 2800000, guid: a443db94379646949b7bcf6a06316808, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_B5394015:
+        m_Texture: {fileID: 2800000, guid: a4e6d5940da9b174b9bd168b4abc0005, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Boolean_1D5A6BDA: 1
+    - Vector1_264B4C11: 0
+    - Vector1_4D7420E1: 1
+    - Vector1_E3261C9E: 0.25
+    m_Colors: []
+  m_BuildTextureStacks: []

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Rock_5_Mat
+  m_Shader: {fileID: -6465566751694194690, guid: b8c22f9077d722c4a90c383c33bca60e, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_26EF69DF:
+        m_Texture: {fileID: 2800000, guid: 18148052bdde42d4db5a7bece77f1c36, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_98238485:
+        m_Texture: {fileID: 2800000, guid: 39285c57b0d71da4c894dcdbbc06495d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_B1096D9F:
+        m_Texture: {fileID: 2800000, guid: 59eec20af7434d3458f482e22e0edca3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_B5394015:
+        m_Texture: {fileID: 2800000, guid: 524c3bcce2b9a9148994ae987b97be2b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Boolean_1D5A6BDA: 1
+    - Vector1_E3261C9E: 0.2
+    m_Colors: []
+  m_BuildTextureStacks: []

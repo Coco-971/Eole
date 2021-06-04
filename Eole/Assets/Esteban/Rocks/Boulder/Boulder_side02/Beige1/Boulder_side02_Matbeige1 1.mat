@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Boulder_side02_Matbeige1 1
+  m_Shader: {fileID: -6465566751694194690, guid: b8c22f9077d722c4a90c383c33bca60e, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_26EF69DF:
+        m_Texture: {fileID: 2800000, guid: 4a1d0741d42b4e9438aa49ddf775f61e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_98238485:
+        m_Texture: {fileID: 2800000, guid: 9c891d3e5f0ae7b4a8a70c3f693a8db8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_B1096D9F:
+        m_Texture: {fileID: 2800000, guid: 26a65041dc2e0b346bd1e0ac52507551, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_B5394015:
+        m_Texture: {fileID: 2800000, guid: 4e042bf190dc1364f82197461e3f591d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_11A90CB9_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 2378fd3114dd2344d812632fa7436dbc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_272419F5_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 44e85e0bbc48cf348a5a68250ad1d530, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_304FA6C0_Texture_1:
+        m_Texture: {fileID: 2800000, guid: a797b4cc33ec94c46a57f8f3f3bceae1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_393EBA7C_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 5abd54d51b778ae4388278fe3e05e9be, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Boolean_1D5A6BDA: 1
+    - Vector1_E3261C9E: 0.25
+    m_Colors: []
+  m_BuildTextureStacks: []
