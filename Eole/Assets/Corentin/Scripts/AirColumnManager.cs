@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class AirColumnManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class AirColumnManager : MonoBehaviour
 	[Header("Booleans")]
 	public bool isOn;
 	public bool activating;
+	public bool changing;
 
 	[Header("Values")]
 	public int minToActivate;
@@ -22,7 +24,7 @@ public class AirColumnManager : MonoBehaviour
 
 	void Awake()
 	{
-		airColumnVFX = GameObject.Find("AirColumnVFX");
+		airColumnVFX = GetComponentInChildren<VisualEffect>().gameObject;
 		isOn = false;
 		activating = false;
 		airColumnVFX.SetActive(false);

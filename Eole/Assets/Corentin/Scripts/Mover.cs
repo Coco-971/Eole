@@ -26,13 +26,6 @@ public class Mover : MonoBehaviour
 	public float inAirMoveSpeed;
 	public float maxSpeed;
 
-    //SFX
-    /*public float footStepSFX_delay = .75f;
-    public float footStepSFX_delayVariance = .1f;
-    private float footStepSFX_timer;
-    private float footStepSFX_fixedDelay = .75f;*/
-    //
-
 	Vector3 inputDirection = Vector3.zero;
 
 	void Awake()
@@ -98,23 +91,6 @@ public class Mover : MonoBehaviour
 				Vector3 moveDirection = (transform.right * inputDirection.x + transform.forward * inputDirection.z) * (currentMoveSpeed * collectorRef.collectingMoveSpeedMultiplier) * Time.deltaTime * 10;
 				moveDirection.y = rb.velocity.y;
 				rb.velocity = moveDirection;
-
-                //SFX
-                /*if(rb.velocity.magnitude > 0.25f)
-                {
-                    if(footStepSFX_timer >= footStepSFX_fixedDelay)
-                    {
-                    playerSFX_MGR.FootStepSFX_Launch(0);
-
-                    footStepSFX_fixedDelay = (Random.Range(-footStepSFX_delayVariance, footStepSFX_delayVariance) + footStepSFX_delay);
-                    footStepSFX_timer = 0;
-                    }
-                    else
-                    {
-                    footStepSFX_timer += Time.deltaTime;
-                    }
-                }*/
-                //
 			}
 		}
 		else

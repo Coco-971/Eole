@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.Rendering;
 
 public class UIManager : MonoBehaviour
 {
@@ -18,7 +19,8 @@ public class UIManager : MonoBehaviour
 	GameObject mainCamera;
 	CameraManager cameraManagerRef;
 	Collector collectorRef;
-	Slider slider;
+	public Image jaugeFill;
+	public Volume pauseVolume;
 
 	[Header("Values")]
 	float initialCameraRot;
@@ -38,7 +40,6 @@ public class UIManager : MonoBehaviour
 		mainCamera = GameObject.Find("Camera");
 		cameraManagerRef = mainCamera.GetComponent<CameraManager>();
 		collectorRef = mainCamera.GetComponent<Collector>();
-		slider = InGameUI.GetComponentInChildren<Slider>();
 
 		InGameUI.SetActive(true);
 		PauseUI.SetActive(false);
@@ -47,7 +48,7 @@ public class UIManager : MonoBehaviour
 
 	void Update()
     {
-		slider.value = abilitiesRef.breezeEnergyInSeconds;
+		jaugeFill.fillAmount = abilitiesRef.breezeEnergyInSeconds / abilitiesRef.breezeDuration;
 
 		if (collectorRef.collecting)
 		{
@@ -83,6 +84,7 @@ public class UIManager : MonoBehaviour
 		abilitiesRef.canAbility = false;
 		Cursor.lockState = CursorLockMode.None;
 		Cursor.visible = true;
+		pauseVolume.weight = 1;
 
 		if (moverRef.grounded)
 		{
@@ -104,6 +106,7 @@ public class UIManager : MonoBehaviour
 		paused = false;
 		InGameUI.SetActive(true);
 		PauseUI.SetActive(false);
+		pauseVolume.weight = 0;
 
 		if (collectorRef.collecting && collectorRef.closestCollectible.GetComponent<Collectible3D>())
 		{

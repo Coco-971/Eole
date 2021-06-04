@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3929622848054023610}
   - component: {fileID: 83044722776201759}
   - component: {fileID: 2793357624510983893}
-  - component: {fileID: 3531501968855511639}
   - component: {fileID: 3531501968855511638}
   m_Layer: 10
   m_Name: PavementCornerOut
@@ -27,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4450404729175183104}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -84,20 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3531501968855511639
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4450404729175183104}
-  m_Material: {fileID: 13400000, guid: 8f3f6f472bc5ab44887ae5c479bd22c9, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8983895190547215491, guid: c0accb7562fc8a144a577272de3f2f59, type: 3}
 --- !u!65 &3531501968855511638
 BoxCollider:
   m_ObjectHideFlags: 0
