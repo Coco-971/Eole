@@ -125,7 +125,7 @@ public class Abilities : MonoBehaviour
 			}
 			else
 			{
-				if (breezeEnergyInSeconds < breezeDuration && !breezed)
+				if (breezeEnergyInSeconds < breezeDuration && !breezed && grounded)
 				{
 					breezeEnergyInSeconds += Time.deltaTime;
 				}

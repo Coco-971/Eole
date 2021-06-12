@@ -25,7 +25,7 @@ public class CameraManager : MonoBehaviour
 		canLook = true;
 	}
 
-	void Update()
+	void LateUpdate()
 	{
 		mouseX = Input.GetAxis("Mouse X") * MouseSensitivity * Time.deltaTime;
 		mouseY = Input.GetAxis("Mouse Y") * MouseSensitivity * Time.deltaTime;
