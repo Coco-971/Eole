@@ -21,12 +21,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: StonePlanar
-  m_Shader: {fileID: -6465566751694194690, guid: fb2474b3f59d9844f89751fb789bf3da, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: a0367b4643e1b7247b5091a9e95924ab, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap:
     MotionVector: User
   disabledShaderPasses:
@@ -52,7 +52,9 @@ Material:
     m_Floats:
     - Boolean_41ABF2CE: 0
     - Vector1_41500E7B: 0
-    - Vector1_AC303D80: 1
+    - Vector1_AC303D80: 1.04
+    - Vector1_B294C6E5: 19.22
+    - Vector1_CA229520: 0.5
     - Vector1_F704B62A: 0.55
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0

@@ -63,7 +63,7 @@ MonoBehaviour:
     name: Wheat3
   - gameObject: {fileID: 3272072942267345982, guid: b9a08a9c66095ac43a46e1f66795bab3, type: 3}
     settings:
-      m_Strength: 8.1
+      m_Strength: 32.38302
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -84,7 +84,7 @@ MonoBehaviour:
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.8, y: 1.1}
+      m_UniformScale: {x: 0.8, y: 3}
       m_UniformBool: 1
       m_XRotationBool: 0
       m_YRotationBool: 1
@@ -93,3 +93,19 @@ MonoBehaviour:
       m_YScaleBool: 0
       m_ZScaleBool: 0
     name: Grass1
+  - gameObject: {fileID: 4495643646315209906, guid: 561396a4f5ba6914d9a22b583187d99e, type: 3}
+    settings:
+      m_Strength: 10.773585
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 360, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 0.7, y: 1.1}
+      m_UniformBool: 1
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Plant2

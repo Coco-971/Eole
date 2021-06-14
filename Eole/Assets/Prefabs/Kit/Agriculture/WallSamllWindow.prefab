@@ -152,19 +152,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4128500671610636187, guid: 833fc0fc614c6c74caccf42db9252777, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.8628392
       objectReference: {fileID: 0}
     - target: {fileID: 4128500671610636187, guid: 833fc0fc614c6c74caccf42db9252777, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4128500671610636187, guid: 833fc0fc614c6c74caccf42db9252777, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.50547844
       objectReference: {fileID: 0}
     - target: {fileID: 4128500671610636187, guid: 833fc0fc614c6c74caccf42db9252777, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4128500671610636187, guid: 833fc0fc614c6c74caccf42db9252777, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -172,7 +172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4128500671610636187, guid: 833fc0fc614c6c74caccf42db9252777, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -60.726
       objectReference: {fileID: 0}
     - target: {fileID: 4128500671610636187, guid: 833fc0fc614c6c74caccf42db9252777, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -180,7 +180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4522133003101347956, guid: 833fc0fc614c6c74caccf42db9252777, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -3.772
+      value: -0.9830023
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522133003101347956, guid: 833fc0fc614c6c74caccf42db9252777, type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -1.2279999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 833fc0fc614c6c74caccf42db9252777, type: 3}
