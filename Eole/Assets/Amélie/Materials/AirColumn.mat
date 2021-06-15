@@ -35,10 +35,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_25D3935: 5
-    - Vector1_4F09D662: -0.25
+    - Vector1_4F09D662: -0.75
     - Vector1_8600E7F4: 5
     - Vector1_C0399D4A: 0
-    - Vector1_C2F7B3FE: 1
+    - Vector1_C2F7B3FE: 2
     - Vector1_CE0C2DE4: 1
     - Vector1_CEDB4DE6: 10
     - _AlphaCutoffEnable: 0
