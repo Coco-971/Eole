@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Turbine_Material
-  m_Shader: {fileID: -6465566751694194690, guid: 651bca269be54e64383da91500e38046, type: 3}
+  m_Name: Turbine_Sphere_Material
+  m_Shader: {fileID: -6465566751694194690, guid: f3c035213de17904bb8548af0124034a, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -22,15 +22,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_3995D9C9:
-        m_Texture: {fileID: 2800000, guid: 269ebc92da2b2e7459ab6eea94f64ca3, type: 3}
+        m_Texture: {fileID: 2800000, guid: e8ea58e72afb86543be05d6e1e2f2fba, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_7881DFF9:
-        m_Texture: {fileID: 2800000, guid: bcd0f71064e52f44699163d428b4b7cc, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3934f99627443194da2f05dd2cac2fc9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_A09979DF:
-        m_Texture: {fileID: 2800000, guid: ae54b1cd5b2800647b81f263fa8a6c99, type: 3}
+        m_Texture: {fileID: 2800000, guid: d2b06dff9789f164fa67476e443ee8b6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
