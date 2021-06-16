@@ -12,6 +12,7 @@ public class UIManager : MonoBehaviour
 	public GameObject InGameUI;
 	public GameObject PauseUI;
 	public GameObject collectibleTextGameObject;
+	public GameObject text;
 	public TextMeshProUGUI collectibleText;
 	GameObject player;
 	Mover moverRef;
@@ -43,6 +44,8 @@ public class UIManager : MonoBehaviour
 
 		InGameUI.SetActive(true);
 		PauseUI.SetActive(false);
+
+		text.SetActive(false);
 		collectibleTextGameObject.SetActive(false);
 	}
 
@@ -53,10 +56,12 @@ public class UIManager : MonoBehaviour
 		if (collectorRef.collecting)
 		{
 			collectibleTextGameObject.SetActive(true);
+			text.SetActive(true);
 			collectibleText.SetText(collectorRef.closestCollectibleText);
 		}
 		else
 		{
+			text.SetActive(false);
 			collectibleTextGameObject.SetActive(false);
 		}
 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 355260080}
   - component: {fileID: 355260082}
   - component: {fileID: 355260081}
+  - component: {fileID: 480877144}
   m_Layer: 0
   m_Name: PickUpSprite
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 355260079}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.25, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1174457919850286439}
   m_RootOrder: 0
@@ -72,12 +73,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c13de9cfe286859429c8885b155fa0d7, type: 3}
+  m_Sprite: {fileID: 7338649510978450998, guid: 21d87ae5d11da9145a0d448f1a7b9179, type: 3}
   m_Color: {r: 0.4392157, g: 0.9372549, b: 1, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1.2782499, y: 1.2802784}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -98,6 +99,25 @@ MonoBehaviour:
   playerCamera: {fileID: 0}
   parent: {fileID: 0}
   player: {fileID: 0}
+--- !u!95 &480877144
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355260079}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eba00f4a4efb0f245a7212b2e03c9471, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3487478156663052932
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +232,7 @@ MonoBehaviour:
   player: {fileID: 0}
   collectorRef: {fileID: 0}
   collectibleVFXManager: {fileID: 0}
+  playerSFXManager: {fileID: 0}
   maxDistanceToExit: 7
   text: 
   collectibleActivated: 0

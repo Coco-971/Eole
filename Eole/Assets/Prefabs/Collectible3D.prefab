@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 514700254}
   - component: {fileID: 514700256}
   - component: {fileID: 514700255}
+  - component: {fileID: 1513062403}
   m_Layer: 0
   m_Name: PickUpSprite
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 514700253}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.25, y: 0.75, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6073478381039490719}
   m_RootOrder: 0
@@ -72,12 +73,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c13de9cfe286859429c8885b155fa0d7, type: 3}
+  m_Sprite: {fileID: 7338649510978450998, guid: 21d87ae5d11da9145a0d448f1a7b9179, type: 3}
   m_Color: {r: 0.43867922, g: 0.93435806, b: 1, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 5.1129994, y: 5.121114}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -98,6 +99,25 @@ MonoBehaviour:
   playerCamera: {fileID: 0}
   parent: {fileID: 0}
   player: {fileID: 0}
+--- !u!95 &1513062403
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514700253}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eba00f4a4efb0f245a7212b2e03c9471, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6359074440920767769
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,6 +203,7 @@ MonoBehaviour:
   baseCursor: {fileID: 2800000, guid: 2c67b23a960fbfc42bd5b8381be420d2, type: 3}
   handCursor: {fileID: 2800000, guid: 2c5c10586b88ecd4da82e3212d0d3174, type: 3}
   collectibleVFXManager: {fileID: 0}
+  playerSFXManager: {fileID: 0}
   distanceToCamera: 0
   rotationSpeed: 250
   text: Ah Shit Here We Go Again !!!!!

@@ -1,0 +1,1978 @@
+fileFormatVersion: 2
+guid: 21d87ae5d11da9145a0d448f1a7b9179
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7338649510978450998
+    second: Epick_version_2_0
+  - first:
+      213: -7408785796606778036
+    second: Epick_version_2_1
+  - first:
+      213: -4440806636912155850
+    second: Epick_version_2_2
+  - first:
+      213: -4223423410062328327
+    second: Epick_version_2_3
+  - first:
+      213: 1103575428409060350
+    second: Epick_version_2_4
+  - first:
+      213: -6771854510912344
+    second: Epick_version_2_5
+  - first:
+      213: -3772496219412502560
+    second: Epick_version_2_6
+  - first:
+      213: -558988685843442224
+    second: Epick_version_2_7
+  - first:
+      213: 1498867933931561059
+    second: Epick_version_2_8
+  - first:
+      213: 3387294606336122164
+    second: Epick_version_2_9
+  - first:
+      213: 1603943206174618472
+    second: Epick_version_2_10
+  - first:
+      213: 526976790649772694
+    second: Epick_version_2_11
+  - first:
+      213: 361804669820424805
+    second: Epick_version_2_12
+  - first:
+      213: 8282395911005263589
+    second: Epick_version_2_13
+  - first:
+      213: -1688902718557242689
+    second: Epick_version_2_14
+  - first:
+      213: 4938061126663585441
+    second: Epick_version_2_15
+  - first:
+      213: 713910658079157070
+    second: Epick_version_2_16
+  - first:
+      213: 2961536254553916404
+    second: Epick_version_2_17
+  - first:
+      213: -5802720742219166115
+    second: Epick_version_2_18
+  - first:
+      213: 7887373716191759172
+    second: Epick_version_2_19
+  - first:
+      213: 7939703985923059427
+    second: Epick_version_2_20
+  - first:
+      213: 4300696807011871782
+    second: Epick_version_2_21
+  - first:
+      213: -4752278969022571700
+    second: Epick_version_2_22
+  - first:
+      213: -5673921861308628051
+    second: Epick_version_2_23
+  - first:
+      213: -9053090215985968968
+    second: Epick_version_2_24
+  - first:
+      213: -8605940016791051243
+    second: Epick_version_2_25
+  - first:
+      213: 2843563147381418105
+    second: Epick_version_2_26
+  - first:
+      213: 4376293038741606882
+    second: Epick_version_2_27
+  - first:
+      213: 3299419213603240591
+    second: Epick_version_2_28
+  - first:
+      213: -6676289115775015778
+    second: Epick_version_2_29
+  - first:
+      213: 6039689184771233216
+    second: Epick_version_2_30
+  - first:
+      213: 8164562880748831346
+    second: Epick_version_2_31
+  - first:
+      213: 5277407711129228872
+    second: Epick_version_2_32
+  - first:
+      213: -1830211496219508868
+    second: Epick_version_2_33
+  - first:
+      213: -4596303663427888291
+    second: Epick_version_2_34
+  - first:
+      213: -717579250394232329
+    second: Epick_version_2_35
+  - first:
+      213: 7100675706056964055
+    second: Epick_version_2_36
+  - first:
+      213: -1630178205725505943
+    second: Epick_version_2_37
+  - first:
+      213: 4851673972178897067
+    second: Epick_version_2_38
+  - first:
+      213: 1875374368891050670
+    second: Epick_version_2_39
+  - first:
+      213: -6952195798622780204
+    second: Epick_version_2_40
+  - first:
+      213: -5115723096201439926
+    second: Epick_version_2_41
+  - first:
+      213: 434933433237824798
+    second: Epick_version_2_42
+  - first:
+      213: -921713101868215262
+    second: Epick_version_2_43
+  - first:
+      213: 2756013938818321302
+    second: Epick_version_2_44
+  - first:
+      213: -2903751508003492657
+    second: Epick_version_2_45
+  - first:
+      213: -6474118946011551991
+    second: Epick_version_2_46
+  - first:
+      213: 4192780337863460604
+    second: Epick_version_2_47
+  - first:
+      213: 8764941355628285253
+    second: Epick_version_2_48
+  - first:
+      213: -6325987564021508166
+    second: Epick_version_2_49
+  - first:
+      213: 9015083836559833468
+    second: Epick_version_2_50
+  - first:
+      213: -7416910547456390553
+    second: Epick_version_2_51
+  - first:
+      213: 8498421177828854976
+    second: Epick_version_2_52
+  - first:
+      213: 4249756864091307333
+    second: Epick_version_2_53
+  - first:
+      213: -4144032088211866405
+    second: Epick_version_2_54
+  - first:
+      213: -7542435444301055710
+    second: Epick_version_2_55
+  - first:
+      213: -5226378127181155109
+    second: Epick_version_2_56
+  - first:
+      213: 1173747883268525018
+    second: Epick_version_2_57
+  - first:
+      213: -5964788916482939845
+    second: Epick_version_2_58
+  - first:
+      213: 7759359553616090514
+    second: Epick_version_2_59
+  - first:
+      213: 5953347952384131993
+    second: Epick_version_2_60
+  - first:
+      213: -7171435086254886391
+    second: Epick_version_2_61
+  - first:
+      213: 2149672494316315149
+    second: Epick_version_2_62
+  - first:
+      213: 8035998671343447466
+    second: Epick_version_2_63
+  - first:
+      213: -8892455830748627125
+    second: Epick_version_2_64
+  - first:
+      213: 3261304666485461626
+    second: Epick_version_2_65
+  - first:
+      213: -873161057314812806
+    second: Epick_version_2_66
+  - first:
+      213: 5414652276889422171
+    second: Epick_version_2_67
+  - first:
+      213: 2291943530333560287
+    second: Epick_version_2_68
+  - first:
+      213: -2574341724853316726
+    second: Epick_version_2_69
+  - first:
+      213: -6129256456505002538
+    second: Epick_version_2_70
+  - first:
+      213: -7150119141810839372
+    second: Epick_version_2_71
+  - first:
+      213: -1434573084931728508
+    second: Epick_version_2_72
+  - first:
+      213: -7786013449772313154
+    second: Epick_version_2_73
+  - first:
+      213: -2231095269694032164
+    second: Epick_version_2_74
+  - first:
+      213: -2860660751645996636
+    second: Epick_version_2_75
+  - first:
+      213: -7691786842968903791
+    second: Epick_version_2_76
+  - first:
+      213: -4781706894629085971
+    second: Epick_version_2_77
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Epick_version_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3584
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636f6f039de18d560800000000000000
+      internalID: 7338649510978450998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_1
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 3584
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c452b484294be2990800000000000000
+      internalID: -7408785796606778036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_2
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 3584
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63367a264e51f52c0800000000000000
+      internalID: -4440806636912155850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_3
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 3584
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd7a2309c26365c0800000000000000
+      internalID: -4223423410062328327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_4
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 3584
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbeb215100b05f00800000000000000
+      internalID: 1103575428409060350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_5
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 3584
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac0861c801f7eff0800000000000000
+      internalID: -6771854510912344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_6
+      rect:
+        serializedVersion: 2
+        x: 3066
+        y: 3584
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7e96d0da665abc0800000000000000
+      internalID: -3772496219412502560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_7
+      rect:
+        serializedVersion: 2
+        x: 3577
+        y: 3584
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5d6da70c21e38f0800000000000000
+      internalID: -558988685843442224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_8
+      rect:
+        serializedVersion: 2
+        x: 4088
+        y: 3584
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360e63fc17c0dc410800000000000000
+      internalID: 1498867933931561059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_9
+      rect:
+        serializedVersion: 2
+        x: 4599
+        y: 3584
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43dd2407f76120f20800000000000000
+      internalID: 3387294606336122164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86370f319d9524610800000000000000
+      internalID: 1603943206174618472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_11
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 3072
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a1e8b5992305700800000000000000
+      internalID: 526976790649772694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_12
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 3072
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56259b62e63650500800000000000000
+      internalID: 361804669820424805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_13
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 3072
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6dd94f23bf0f270800000000000000
+      internalID: 8282395911005263589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_14
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 3072
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba3438fcefcf88e0800000000000000
+      internalID: -1688902718557242689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_15
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 3072
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aeb2f58e64878440800000000000000
+      internalID: 4938061126663585441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_16
+      rect:
+        serializedVersion: 2
+        x: 3066
+        y: 3072
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b6c2806f158e900800000000000000
+      internalID: 713910658079157070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_17
+      rect:
+        serializedVersion: 2
+        x: 3577
+        y: 3072
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3802a588d791920800000000000000
+      internalID: 2961536254553916404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_18
+      rect:
+        serializedVersion: 2
+        x: 4088
+        y: 3072
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e4c35aa38987fa0800000000000000
+      internalID: -5802720742219166115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_19
+      rect:
+        serializedVersion: 2
+        x: 4599
+        y: 3072
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44bcc541b94957d60800000000000000
+      internalID: 7887373716191759172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee62b675be7f2e60800000000000000
+      internalID: 7939703985923059427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_21
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 2560
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c699cb5f42fab30800000000000000
+      internalID: 4300696807011871782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_22
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 2560
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b99d1d4738c0eb0800000000000000
+      internalID: -4752278969022571700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_23
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 2560
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3406df02e2241b0800000000000000
+      internalID: -5673921861308628051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_24
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 2560
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b88794f966fc5280800000000000000
+      internalID: -9053090215985968968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_25
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 2560
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514a9d4a62f819880800000000000000
+      internalID: -8605940016791051243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_26
+      rect:
+        serializedVersion: 2
+        x: 3066
+        y: 2560
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978af00ed9d567720800000000000000
+      internalID: 2843563147381418105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_27
+      rect:
+        serializedVersion: 2
+        x: 3577
+        y: 2560
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e155370557bbbc30800000000000000
+      internalID: 4376293038741606882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_28
+      rect:
+        serializedVersion: 2
+        x: 4088
+        y: 2560
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a7bef2b44e9cd20800000000000000
+      internalID: 3299419213603240591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_29
+      rect:
+        serializedVersion: 2
+        x: 4599
+        y: 2560
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e946c64fb6e0953a0800000000000000
+      internalID: -6676289115775015778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5de0c505941d350800000000000000
+      internalID: 6039689184771233216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_31
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 2048
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272cf5daeaa5e4170800000000000000
+      internalID: 8164562880748831346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_32
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 2048
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846d3c43a5e1d3940800000000000000
+      internalID: 5277407711129228872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_33
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 2048
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fffff4758c996e0800000000000000
+      internalID: -1830211496219508868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_34
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 2048
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5bdd8d9b26a630c0800000000000000
+      internalID: -4596303663427888291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_35
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 2048
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f98f024975aa06f0800000000000000
+      internalID: -717579250394232329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_36
+      rect:
+        serializedVersion: 2
+        x: 3066
+        y: 2048
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d775c40feaaa8260800000000000000
+      internalID: 7100675706056964055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_37
+      rect:
+        serializedVersion: 2
+        x: 3577
+        y: 2048
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966c5271f817069e0800000000000000
+      internalID: -1630178205725505943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_38
+      rect:
+        serializedVersion: 2
+        x: 4088
+        y: 2048
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba84bbdb5cb945340800000000000000
+      internalID: 4851673972178897067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_39
+      rect:
+        serializedVersion: 2
+        x: 4599
+        y: 2048
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa9f966d0ba60a10800000000000000
+      internalID: 1875374368891050670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4402661c6d48f90800000000000000
+      internalID: -6952195798622780204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_41
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1536
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45d6a1c2fc4109b0800000000000000
+      internalID: -5115723096201439926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_42
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1536
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15e41537a1390600800000000000000
+      internalID: 434933433237824798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_43
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 1536
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224525a31da6533f0800000000000000
+      internalID: -921713101868215262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_44
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 1536
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b8a4b43145f3620800000000000000
+      internalID: 2756013938818321302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_45
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 1536
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc6271636dc3b7d0800000000000000
+      internalID: -2903751508003492657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_46
+      rect:
+        serializedVersion: 2
+        x: 3066
+        y: 1536
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907ea55be1f4726a0800000000000000
+      internalID: -6474118946011551991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_47
+      rect:
+        serializedVersion: 2
+        x: 3577
+        y: 1536
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf60893c08fbf2a30800000000000000
+      internalID: 4192780337863460604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_48
+      rect:
+        serializedVersion: 2
+        x: 4088
+        y: 1536
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54dca5b69b353a970800000000000000
+      internalID: 8764941355628285253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_49
+      rect:
+        serializedVersion: 2
+        x: 4599
+        y: 1536
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab795f8b3d39538a0800000000000000
+      internalID: -6325987564021508166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79b3824cf20c1d70800000000000000
+      internalID: 9015083836559833468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_51
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1024
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a83005727d11990800000000000000
+      internalID: -7416910547456390553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_52
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1024
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc4520e80570f570800000000000000
+      internalID: 8498421177828854976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_53
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 1024
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54db0f90a5b2afa30800000000000000
+      internalID: 4249756864091307333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_54
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 1024
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdcbf4495c07d76c0800000000000000
+      internalID: -4144032088211866405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_55
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 1024
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229be19cce2e35790800000000000000
+      internalID: -7542435444301055710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_56
+      rect:
+        serializedVersion: 2
+        x: 3066
+        y: 1024
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4fe7ba8cc2877b0800000000000000
+      internalID: -5226378127181155109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_57
+      rect:
+        serializedVersion: 2
+        x: 3577
+        y: 1024
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb46162b7df94010800000000000000
+      internalID: 1173747883268525018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_58
+      rect:
+        serializedVersion: 2
+        x: 4088
+        y: 1024
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34e8d05510d83da0800000000000000
+      internalID: -5964788916482939845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_59
+      rect:
+        serializedVersion: 2
+        x: 4599
+        y: 1024
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29512d53768ceab60800000000000000
+      internalID: 7759359553616090514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993c726ab6a8e9250800000000000000
+      internalID: 5953347952384131993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_61
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 512
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9023102f8c1f97c90800000000000000
+      internalID: -7171435086254886391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_62
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 512
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02e62f7ebb25dd10800000000000000
+      internalID: 2149672494316315149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_63
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 512
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadefec073a958f60800000000000000
+      internalID: 8035998671343447466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_64
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 512
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f70634986a79480800000000000000
+      internalID: -8892455830748627125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_65
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 512
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a729036a05b724d20800000000000000
+      internalID: 3261304666485461626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_66
+      rect:
+        serializedVersion: 2
+        x: 3066
+        y: 512
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ccb0305a8e1e3f0800000000000000
+      internalID: -873161057314812806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_67
+      rect:
+        serializedVersion: 2
+        x: 3577
+        y: 512
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59014ace85b42b40800000000000000
+      internalID: 5414652276889422171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_68
+      rect:
+        serializedVersion: 2
+        x: 4088
+        y: 512
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd59c26f7e9ecf10800000000000000
+      internalID: 2291943530333560287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_69
+      rect:
+        serializedVersion: 2
+        x: 4599
+        y: 512
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83d6a737d9164cd0800000000000000
+      internalID: -2574341724853316726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5ffbc1ab180faa0800000000000000
+      internalID: -6129256456505002538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_71
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0e4a2068ca5cc90800000000000000
+      internalID: -7150119141810839372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_72
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 0
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bde44416f571ce0800000000000000
+      internalID: -1434573084931728508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_73
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 0
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb558edf40682f390800000000000000
+      internalID: -7786013449772313154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_74
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 0
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd635dd4cae8901e0800000000000000
+      internalID: -2231095269694032164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_75
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 0
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a90d3be334ec48d0800000000000000
+      internalID: -2860660751645996636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_76
+      rect:
+        serializedVersion: 2
+        x: 3066
+        y: 0
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fa0d08e98414590800000000000000
+      internalID: -7691786842968903791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epick_version_2_77
+      rect:
+        serializedVersion: 2
+        x: 3577
+        y: 0
+        width: 511.3
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decd895f9e6f3adb0800000000000000
+      internalID: -4781706894629085971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: afd776ccb0ac96e4291d2bdad69ce990
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
