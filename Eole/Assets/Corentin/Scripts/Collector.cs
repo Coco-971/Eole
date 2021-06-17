@@ -142,7 +142,7 @@ public class Collector : MonoBehaviour
 			{
 				StartCoroutine(CollectorCooldown(playerVFXManager.ghostFadeDuration));
 				closestCollectible.GetComponent<CollectibleFlashBack>().PlayFlashBack();
-				closestCollectibleText = collectibleFlashBack.text;
+				//closestCollectibleText = collectibleFlashBack.text;
 
 				//VFX
 				playerVFXManager.CollectibleVolume_ON(1);

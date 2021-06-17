@@ -56,7 +56,11 @@ public class UIManager : MonoBehaviour
 		if (collectorRef.collecting)
 		{
 			collectibleTextGameObject.SetActive(true);
-			text.SetActive(true);
+			if (collectorRef.closestCollectible.GetComponent<Collectible3D>())
+			{
+				text.SetActive(true);
+			}
+				
 			collectibleText.SetText(collectorRef.closestCollectibleText);
 		}
 		else

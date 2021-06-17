@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7338649510978450998, guid: 21d87ae5d11da9145a0d448f1a7b9179, type: 3}
-  m_Color: {r: 0.43867922, g: 0.93435806, b: 1, a: 0.5882353}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   playerSFXManager: {fileID: 0}
   distanceToCamera: 0
   rotationSpeed: 250
-  text: Ah Shit Here We Go Again !!!!!
+  text: "Le manche est encore chaud. O\xF9 est pass\xE9 celui qui le maniait?"
   alreadyActivated: 0
   collectibleActive: 0
   targetPos: {x: 0, y: 0, z: 0}
@@ -275,7 +275,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c15a7a311d46f9d43b3fa118d7f1b538, type: 2}
+  - {fileID: 2100000, guid: 149039dcb87928841b51ac2805c10e16, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -304,7 +304,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8286276703677897158}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 2121735762094594528, guid: c76f99906872f7d4d8f4266be35bc314, type: 3}
 --- !u!1001 &8286276703131277409
 PrefabInstance:
   m_ObjectHideFlags: 0
